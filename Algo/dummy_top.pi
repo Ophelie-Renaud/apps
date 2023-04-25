@@ -6,5 +6,13 @@
     <key attr.name="name" attr.type="string" for="graph"/>
     <graph edgedefault="directed">
         <data key="name">dummy_top</data>
+        <node id="A" kind="actor">
+            <port annotation="NONE" expr="1" kind="output" name="out"/>
+        </node>
+        <node id="B" kind="actor">
+            <port annotation="NONE" expr="1" kind="input" name="in"/>
+        </node>
+        <edge kind="fifo" source="A" sourceport="out" target="B"
+            targetport="in" type="uchar"/>
     </graph>
 </graphml>
