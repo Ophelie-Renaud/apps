@@ -106,3 +106,5 @@ You will observe that method SCAPE 3 further reduces the complexity of the graph
 
 ## Testing on target
 ...
+
+![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo/Pic/test.png)
