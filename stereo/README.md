@@ -1,0 +1,4 @@
+### Scaling up of Clusters of Actors on Processing Elements (SCAPE)
+The method employs a dataflow actor grouping technique that relies on pattern matching principles. Its objective is to decrease the complexity of a graph, leading to quicker compilation times, all while maintaining the parallelism of the application and preserving its latency and throughput.
+## Native methode (SCAPE1)
+The primary objective of the SCAPE1 method is to decrease data parallelism by detecting specific patterns called "URC" and "SRV" at a particular hierarchical level. The method groups these patterns while taking into account the number of processing elements in the target architecture. The result is a set of clustering patterns that correspond to the hierarchical levels of the input graph. Additionally, the method includes a level 0 pattern representing the original input graph and a level n+1 pattern representing the entire graph grouped as a single entity.

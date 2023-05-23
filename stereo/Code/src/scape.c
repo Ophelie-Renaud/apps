@@ -58,6 +58,10 @@ void top (int zero, int truncValue, int scale, int one_, int one, int nbIteratio
         memcpy(feedBestCost + 0, backBestCost_out + 0, size +1); // 164920 * uchar
 
     }
+    memcpy(backResult + 0, backResult_out + 0, size); // 164920 * uchar
+    memcpy(backBestCost + 0, backBestCost_out + 0, size +1); // 164920 * uchar
+    memcpy(back+0,feed+0,size);
+
     split(20/*nbSlice*/, 434/*width*/, 380/*height*/, backResult_out, split_out); // Split_0
     for(int i=0; i<20;i++){
         medianFilter(21/*height*/, 434/*width*/, 1/*topDownBorderSize*/, split_out,
@@ -82,4 +86,91 @@ void top (int zero, int truncValue, int scale, int one_, int one, int nbIteratio
     free(backBestCost_out);
     free(split_out);
     free(filteredDisparity_out);
+}
+void costParallelWork (int truncValue, int scale, int nbIterations, int minDisparity, int maxDisparity, int width, int height, IN uchar *cenL, IN float *grayL, IN uchar *rgbL, IN uchar *cenR,IN float *grayR,IN float * feedBestCost, IN uchar *feedResult, IN uchar *feed, OUT uchar *rawDisparity,OUT float *backBestCost, OUT uchar *backResult, OUT uchar *back){
+    int size = height*width;
+    uchar* disparities_out = (uchar*)malloc(sizeof(uchar)*(maxDisparity-minDisparity));
+    int*  offsets_out = (int*)malloc(sizeof(int)*nbIterations);
+    float* hWeights_out = (float*)malloc(sizeof(float)*(height*width*3));
+    float* vWeights_out = (float*)malloc(sizeof(float)*(height*width*3));
+    float* disparityError_out = (float*)malloc(sizeof(float)*(height*width));
+    float* aggregatedDisparity_out = (float*)malloc(sizeof(float)*(height*width));
+    uchar* backResult_out = (uchar*)malloc(sizeof(uchar)*(height*width));
+    float* backBestCost_out = (float*)malloc(sizeof(float)*(height*width+1));
+
+    disparityGen(0/*minDisparity*/, 60/*maxDisparity*/, disparities_out);
+    offsetGen(5/*nbIterations*/, offsets_out); // Cost_Parallel_Work_0_OffsetGen_0
+    for(int i = 0; i<5;i++){
+        computeWeights(380/*height*/, 434/*width*/, 0/*horOrVert*/, offsets_out, rgbL,
+                       hWeights_out); // Cost_Parallel_Work_0_ComputeHorWeights_0
+        computeWeights(380/*height*/, 434/*width*/, 1/*horOrVert*/, offsets_out, rgbL,
+                       vWeights_out); // Cost_Parallel_Work_0_ComputeVertWeights_4
+    }
+
+    for(int i = 0; i< 60; i++) {
+        costConstruction(380/*height*/, 434/*width*/, 12/*truncValue*/, disparities_out, grayL,
+                         grayR, cenL, cenR, disparityError_out,
+                         feed); // Cost_Parallel_Work_0_CostConstruction_00
+        aggregateCost(380/*height*/, 434/*width*/, 5/*nbIterations*/, disparityError_out,
+                      offsets_out, hWeights_out, vWeights_out,
+                      aggregatedDisparity_out); // Cost_Parallel_Work_0_AggregateCost_07
+        disparitySelect(380/*height*/, 434/*width*/, 60/*nbDisparities*/, 4/*scale*/, 0/*minDisparity*/,
+                        disparities_out, aggregatedDisparity_out, feedBestCost,
+                        feedResult, backResult_out, backBestCost_out); // Cost_Parallel_Work_0_disparitySelect_00
+
+        memcpy(feedResult + 0, backResult_out + 0, size); // 164920 * uchar
+        memcpy(feedBestCost + 0, backBestCost_out + 0, size +1); // 164920 * uchar
+
+    }
+    memcpy(backResult + 0, backResult_out + 0, size); // 164920 * uchar
+    memcpy(backBestCost + 0, backBestCost_out + 0, size +1); // 164920 * uchar
+    memcpy(back+0,feed+0,size);
+
+    free(disparities_out);
+    free(offsets_out);
+    free(hWeights_out);
+    free(vWeights_out);
+    free(disparityError_out);
+    free(aggregatedDisparity_out);
+    free(backResult_out);
+    free(backBestCost_out);
+}
+
+void medianFilter_srv(int height, int width, int topDownBorderSize, int coreScale, IN uchar *rawDisparity, OUT uchar *filteredDisparity){
+    for(int i=0; i<20/coreScale;i++){
+        medianFilter(height/*height*/, width/*width*/, topDownBorderSize/*topDownBorderSize*/, rawDisparity,
+                     filteredDisparity); // Median_Filter_00
+    }
+}
+
+void loop(int height, int width, int truncValue, int nbIterations, int nbDisparities,int scale, int minDisparity, int coreScale, IN uchar *disparities, IN float *grayL, IN float *grayR, IN uchar *cenL, IN uchar *cenR, IN uchar *feed, IN int *offsets, IN float *hWeights,IN float *vWeights, IN float *feedBestCost, IN uchar *feedResult, OUT uchar *back, OUT float *backBestCost, OUT uchar *backResult){
+    int size = height*width;
+    float* disparityError_out = (float*)malloc(sizeof(float)*(height*width));
+    float* aggregatedDisparity_out = (float*)malloc(sizeof(float)*(height*width));
+    uchar* backResult_out = (uchar*)malloc(sizeof(uchar)*(height*width));
+    float* backBestCost_out = (float*)malloc(sizeof(float)*(height*width+1));
+
+    for(int i = 0; i< 60/coreScale; i++) {
+        costConstruction(380/*height*/, 434/*width*/, 12/*truncValue*/, disparities, grayL,
+                         grayR, cenL, cenR, disparityError_out,
+                         feed); // Cost_Parallel_Work_0_CostConstruction_00
+        aggregateCost(380/*height*/, 434/*width*/, 5/*nbIterations*/, disparityError_out,
+                      offsets, hWeights, vWeights,
+                      aggregatedDisparity_out); // Cost_Parallel_Work_0_AggregateCost_07
+        disparitySelect(380/*height*/, 434/*width*/, 60/*nbDisparities*/, 4/*scale*/, 0/*minDisparity*/,
+                        disparities, aggregatedDisparity_out, feedBestCost,
+                        feedResult, backResult_out, backBestCost_out); // Cost_Parallel_Work_0_disparitySelect_00
+
+        memcpy(feedResult + 0, backResult_out + 0, size); // 164920 * uchar
+        memcpy(feedBestCost + 0, backBestCost_out + 0, size +1); // 164920 * uchar
+
+    }
+    memcpy(backResult + 0, backResult_out + 0, size); // 164920 * uchar
+    memcpy(backBestCost + 0, backBestCost_out + 0, size +1); // 164920 * uchar
+    memcpy(back+0,feed+0,size);
+
+    free(disparityError_out);
+    free(aggregatedDisparity_out);
+    free(backResult_out);
+    free(backBestCost_out);
 }
