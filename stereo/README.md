@@ -93,3 +93,16 @@ Now you can run the the workflow in order to generate the parallel code.
     3. Select the scenario
     4. wait few second
     5. see the codegen folder is filled
+ 
+## Understand the Results
+You can test the process on all clustering configurations by adapting the number of target Cores.
+At each generation a gantt chart is created.
+You will observe that the parallelism is totally preserved on the SCAPE1 1 level clustering configuration since the implementation time is identical to that of the state of the art: 0 level.
+2 level clustering configuration decreases in granularity and parallelism. Implementation time is the simulation of the throughput of the application on the architecture.
+
+You will observe that parallelism is added to the SCAPE2 1 level clustering configuration. Then the configurations decrease in parallelism as they decrease in granularity.
+
+You will observe that method SCAPE 3 further reduces the complexity of the graph and obtains the best performance in terms of implementation time.
+
+## Testing on target
+...
