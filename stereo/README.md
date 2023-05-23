@@ -3,8 +3,8 @@ The method employs a dataflow actor grouping technique that relies on pattern ma
 
 ## Native methode (SCAPE1)
 The primary objective of the SCAPE1 method is to decrease DATA parallelism by detecting specific patterns called "URC" and "SRV" at a particular hierarchical level. The method groups these patterns while taking into account the number of processing elements in the target architecture. The result is a set of clustering patterns that correspond to the hierarchical levels of the input graph. Additionally, the method includes a level 0 pattern representing the original input graph and a level n+1 pattern representing the entire graph grouped as a single entity.
-'(details: https://hal.science/hal-04089941v1/file/DASIP__Architecture_aware_Clustering_of_Dataflow_Actors_for_Controlled_Scheduling_Complexity.pdf,
-O. Renaud, D. Gageot, K. Desnos, J.-F. Nezan. SCAPE: HW-Aware Clustering of Dataflow Actors for Tunable Scheduling Complexity, IETR, 2023)'
+'details: https://hal.science/hal-04089941v1/file/DASIP__Architecture_aware_Clustering_of_Dataflow_Actors_for_Controlled_Scheduling_Complexity.pdf,
+O. Renaud, D. Gageot, K. Desnos, J.-F. Nezan. SCAPE: HW-Aware Clustering of Dataflow Actors for Tunable Scheduling Complexity, IETR, 2023'
 
 ##First extension (SCAPE2)
 The second method expands upon the first method by incorporating pipeline parallelism into the sequential components. This is achieved by aligning the number of pipeline stages with the number of processing elements. The method identifies sequential portions, which can either be a series of actors with a degree of parallelism below the number of processing elements in the target architecture or cycles.
