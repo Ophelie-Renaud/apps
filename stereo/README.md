@@ -41,6 +41,55 @@ A Tutorial Project can be found here. The project needs to be imported in your w
 Once these steps are completed, the unzipped project files can be accessed either from the “Package Explorer” view of Eclipse, or directly in the “Workspace” directory of eclipse (using your favorite browser).
 
 ## Understand the Inputs and Run the Workflow
-The present project contains folders with the name **Algo for the algorithm model, “Archi” for the architecture model, “Scenarios” for the parameters and constraints of rapid prototyping, “Code” for the generated code, “Algo/generated” for the exported intermediate information, and “Workflows” for the different available rapid prototyping workflows.
+The present project contains folders with the name **Algo** for the algorithm model, **Archi** for the architecture model, **Scenarios** for the parameters and constraints of rapid prototyping, **Code** for the generated code, **Algo/generated** for the exported intermediate information, and **Workflows** for the different available rapid prototyping workflows.
 
+### Algorithm
+As evident, the algorithm directory comprises separate folders for each of the previously introduced methods. By default, the graphs are scaled to align with an architecture comprising 3 processing elements.
 
+To accommodate changes in the architecture, a "coreScale" parameter needs to be adjusted. This parameter facilitates the scaling of the graphs accordingly.
+example.
+
+    1. Go to “Algo > SCAPE1 >2 level clustering config > stereo_top.diagram”
+    2. Select coreScale parameter
+    3. Set a value that is the divisor of the RV q(median_filter) just above the number of processing element  (q(medianfilter) = 20)
+    4. Save
+    
+### Architecture
+You can automatically add architecture with a custom number of processing element
+
+    1. Right-click on the present project
+    2. Select “Preesm > Generate default Architecture ..”
+    3. Choose the number of processing element you want
+    
+### Scenario
+You can fill a scenario with your newly created architecture and the corresponding algorithme
+
+    1. right-click on the Scenario folder “New > PREESM.scenario”
+On the **overview** view
+
+    2. Select the path of the corresponding algorithm top.pi
+    3. Select the path of the newly created architecture
+    
+on the **constraints** view
+
+    4. Select all the actor to be executed on all the core
+    
+on the **simulation** view
+
+    5. Select Core0 as main operator
+    6. Select shared_mem as main ComNode
+    7. Fetch all data types
+    8. Select all the cores to execute broadcasts/explode/implode
+    
+on the **codegen** view
+
+    9. Select “/org.ietr.preesm.stereo.scape/Code/codegen” folder
+    
+### Workflow
+Now you can run the the workflow in order to generate the parallel code.
+
+    1. open Codegen2.workflow file
+    2. rightclick on the workflow “Run workflow > ..”
+    3. Select the scenario
+    4. wait few second
+    5. see the codegen folder is filled
