@@ -15,7 +15,7 @@ These newly created instances are then pipelined with a specific delay between e
 
 > details: [O. Renaud, N. Haggui, K. Desnos, J.-F. Nezan. Automated Clustering and Pipelining of Dataflow Actors for Controlled Scheduling Complexity, IETR, 2023]
 
-##Second extension (SCAPE3)
+## Second extension (SCAPE3)
 The third method expands upon the first two methods by considering the hierarchical context when selecting actor groupings. Since a pipeline cannot be enclosed within a cycle, it is crucial to have knowledge of the higher-level states before introducing delays.
 The method involves identifying the highest hierarchical actor contained within a cycle in the graph. If the loop repetition exceeds the number of processing elements, the lower levels are approximately grouped, and the loop is semi-unrolled. However, if the loop repetition is within the acceptable range, the reasons for method #1 are identified, and the use of a pipeline is prohibited.
 
@@ -41,3 +41,6 @@ A Tutorial Project can be found here. The project needs to be imported in your w
 Once these steps are completed, the unzipped project files can be accessed either from the “Package Explorer” view of Eclipse, or directly in the “Workspace” directory of eclipse (using your favorite browser).
 
 ## Understand the Inputs and Run the Workflow
+The present project contains folders with the name 'Algo' for the algorithm model, “Archi” for the architecture model, “Scenarios” for the parameters and constraints of rapid prototyping, “Code” for the generated code, “Algo/generated” for the exported intermediate information, and “Workflows” for the different available rapid prototyping workflows.
+
+
