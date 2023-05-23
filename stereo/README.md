@@ -41,6 +41,6 @@ A Tutorial Project can be found here. The project needs to be imported in your w
 Once these steps are completed, the unzipped project files can be accessed either from the “Package Explorer” view of Eclipse, or directly in the “Workspace” directory of eclipse (using your favorite browser).
 
 ## Understand the Inputs and Run the Workflow
-The present project contains folders with the name 'Algo' for the algorithm model, “Archi” for the architecture model, “Scenarios” for the parameters and constraints of rapid prototyping, “Code” for the generated code, “Algo/generated” for the exported intermediate information, and “Workflows” for the different available rapid prototyping workflows.
+The present project contains folders with the name **Algo for the algorithm model, “Archi” for the architecture model, “Scenarios” for the parameters and constraints of rapid prototyping, “Code” for the generated code, “Algo/generated” for the exported intermediate information, and “Workflows” for the different available rapid prototyping workflows.
 
 
