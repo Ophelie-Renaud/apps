@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <graph edgedefault="directed">
+        <data key="name">ABC_top</data>
+        <node id="sub0" kind="actor">
+            <data key="graph_desc">Algo/ABC/V2/sub0.pi</data>
+            <port annotation="NONE" expr="47" kind="output" name="A0"/>
+            <port annotation="NONE" expr="13" kind="output" name="B0"/>
+            <port annotation="NONE" expr="1" kind="output" name="delay"/>
+        </node>
+        <node id="sub1" kind="actor">
+            <data key="graph_desc">Algo/ABC/V2/sub1.pi</data>
+            <port annotation="NONE" expr="47" kind="input" name="A1"/>
+            <port annotation="NONE" expr="1" kind="input" name="delayIn"/>
+            <port annotation="NONE" expr="31" kind="output" name="A0"/>
+            <port annotation="NONE" expr="16" kind="output" name="B0"/>
+            <port annotation="NONE" expr="1" kind="output" name="delayOut"/>
+        </node>
+        <node id="sub2" kind="actor">
+            <data key="graph_desc">Algo/ABC/V2/sub2.pi</data>
+            <port annotation="NONE" expr="31" kind="input" name="A1"/>
+            <port annotation="NONE" expr="1" kind="input" name="delayIn"/>
+            <port annotation="NONE" expr="15" kind="output" name="A0"/>
+            <port annotation="NONE" expr="16" kind="output" name="B0"/>
+            <port annotation="NONE" expr="1" kind="output" name="delayOut"/>
+        </node>
+        <node id="sub3" kind="actor">
+            <data key="graph_desc">Algo/ABC/V2/sub3.pi</data>
+            <port annotation="NONE" expr="15" kind="input" name="A1"/>
+            <port annotation="NONE" expr="13" kind="input" name="B0"/>
+            <port annotation="NONE" expr="16" kind="input" name="B1"/>
+            <port annotation="NONE" expr="16" kind="input" name="B2"/>
+            <port annotation="NONE" expr="1" kind="input" name="delayIn"/>
+            <port annotation="NONE" expr="57" kind="output" name="C0"/>
+        </node>
+        <node id="sub4" kind="actor">
+            <data key="graph_desc">Algo/ABC/V2/sub4.pi</data>
+            <port annotation="NONE" expr="57" kind="input" name="C1"/>
+            <port annotation="NONE" expr="9" kind="output" name="C0"/>
+        </node>
+        <node id="sub5" kind="actor">
+            <data key="graph_desc">Algo/ABC/V2/sub5.pi</data>
+            <port annotation="NONE" expr="9" kind="input" name="C1"/>
+        </node>
+        <edge kind="fifo" source="sub0" sourceport="A0"
+            target="sub1" targetport="A1" type="char"/>
+        <edge kind="fifo" source="sub1" sourceport="A0"
+            target="sub2" targetport="A1" type="char"/>
+        <edge kind="fifo" source="sub1" sourceport="delayOut"
+            target="sub2" targetport="delayIn" type="char"/>
+        <edge kind="fifo" source="sub2" sourceport="delayOut"
+            target="sub3" targetport="delayIn" type="char"/>
+        <edge kind="fifo" source="sub2" sourceport="A0"
+            target="sub3" targetport="A1" type="char"/>
+        <edge kind="fifo" source="sub0" sourceport="B0"
+            target="sub3" targetport="B0" type="char"/>
+        <edge kind="fifo" source="sub1" sourceport="B0"
+            target="sub3" targetport="B1" type="char"/>
+        <edge kind="fifo" source="sub2" sourceport="B0"
+            target="sub3" targetport="B2" type="char"/>
+        <edge kind="fifo" source="sub3" sourceport="C0"
+            target="sub4" targetport="C1" type="char"/>
+        <edge kind="fifo" source="sub4" sourceport="C0"
+            target="sub5" targetport="C1" type="char"/>
+        <edge kind="fifo" source="sub0" sourceport="delay"
+            target="sub1" targetport="delayIn" type="char"/>
+    </graph>
+</graphml>

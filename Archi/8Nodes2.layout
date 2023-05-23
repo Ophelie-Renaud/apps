@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+   <vertices>
+      <vertex id="Node0" x="57" y="70"/>
+      <vertex id="Node1" x="57" y="189"/>
+      <vertex id="Node2" x="57" y="308"/>
+      <vertex id="Node3" x="57" y="427"/>
+      <vertex id="Node4" x="57" y="546"/>
+      <vertex id="Node5" x="57" y="665"/>
+      <vertex id="Node6" x="57" y="784"/>
+      <vertex id="Node7" x="57" y="903"/>
+      <vertex id="shared_mem0" x="363" y="563"/>
+   </vertices>
+</layout>
