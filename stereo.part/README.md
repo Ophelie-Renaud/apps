@@ -36,7 +36,7 @@ Once these steps are completed, the unzipped project files can be accessed eithe
 ## Partitioning automation
 The present project contains folders with the name **Algo** for the algorithm model, **Archi** for the architecture model, **Scenarios** for the parameters and constraints of rapid prototyping, **Code** for the generated code, **Algo/generated** for the exported intermediate information, and **Workflows** for the different available rapid prototyping workflows.
 
-#### Node Partitioner
+### Node Partitioning
 The node partitioner receives input in the form of the original dataflow graph (Algo/genuineAlgo/stereo.diagram) and the authentic architecture (Archi/genuineArchi.slam). These inputs are filled with the genuine scenario (Scenario/genuineScenario.scenario).
 
 You can generate the partitioned graphs following these steps:
@@ -46,3 +46,7 @@ You can generate the partitioned graphs following these steps:
     
 .. or take advantage of the provided graphs (Algo/part/..).
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/node_partitioner.png)
+
+### Thread Partitioning automation
+
+![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/thread_partitioner.png)
