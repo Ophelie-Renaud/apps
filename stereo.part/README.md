@@ -40,6 +40,7 @@ The present project contains folders with the name **Algo** for the algorithm mo
 The node partitioner receives input in the form of the original dataflow graph (Algo/genuineAlgo/stereo.diagram) and the authentic architecture (Archi/genuineArchi.slam). These inputs are filled with the genuine scenario (Scenario/genuineScenario.scenario).
 
 You can generate the partitioned graphs following these steps:
+
     1. open node_partitioner.workflow file
     2. rightclick on the workflow “Run workflow > ..”
     3. Select genuine.scenario
@@ -47,6 +48,16 @@ You can generate the partitioned graphs following these steps:
 .. or take advantage of the provided graphs (Algo/part/..).
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/node_partitioner.png)
 
-### Thread Partitioning automation
+### Thread Partitioning
+
+You can simulate the intranode resource allocation and observe the generated gantt for each subgraphs
+
+    1. open scape.workflow file
+    2. rightclick on the workflow “Run workflow > ..”
+    3. Select subi.scenario
 
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/thread_partitioner.png)
+
+### Simulation
+
+$add SimGrid part$
