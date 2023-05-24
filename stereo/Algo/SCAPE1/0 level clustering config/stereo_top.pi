@@ -158,7 +158,7 @@
                 kind="output" name="cen"/>
         </node>
         <node id="Cost_Parallel_Work" kind="actor">
-            <data key="graph_desc">org.preesm.simsdp/stereo/Algo/SCAPE1/0 level clustering config/cost_parallel_work.pi</data>
+            <data key="graph_desc">Algo/SCAPE1/0 level clustering config/cost_parallel_work.pi</data>
             <port kind="cfg_input" name="truncValue"/>
             <port kind="cfg_input" name="scale"/>
             <port kind="cfg_input" name="nbIterations"/>

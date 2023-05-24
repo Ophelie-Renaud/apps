@@ -142,6 +142,15 @@ void medianFilter_srv(int height, int width, int topDownBorderSize, int coreScal
                      filteredDisparity); // Median_Filter_00
     }
 }
+void r_urc(int height,int width, int id, int size, OUT uchar *grayR,OUT uchar *cenR){
+    uchar* read_ppm1_out = (uchar*)malloc(sizeof(uchar)*(height*width*3));
+
+    readPPM(1/*id*/, 380/*height*/, 434/*width*/, read_ppm1_out); // Read_PPM1_0
+    rgb2Gray(164920/*size*/, read_ppm1_out, grayR); // RGB2Gray_R_0
+    census(380/*height*/, 434/*width*/, grayR, cenR); // Census_R_0
+
+    free(read_ppm1_out);
+}
 
 void loop(int height, int width, int truncValue, int nbIterations, int nbDisparities,int scale, int minDisparity, int coreScale, IN uchar *disparities, IN float *grayL, IN float *grayR, IN uchar *cenL, IN uchar *cenR, IN uchar *feed, IN int *offsets, IN float *hWeights,IN float *vWeights, IN float *feedBestCost, IN uchar *feedResult, OUT uchar *back, OUT float *backBestCost, OUT uchar *backResult){
     int size = height*width;

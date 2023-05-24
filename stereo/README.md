@@ -109,12 +109,12 @@ You will observe that method SCAPE 3 further reduces the complexity of the graph
 | SCAPE 1 | Level 0 | 313 | xx |
 | SCAPE 1 | Level 1 | 313 | xx |
 | SCAPE 1 | Level 2 | 313 | xx |
-| SCAPE 1 | Level 3 | 313 | xx |
+| SCAPE 1 | Level 3 | 1 | xx |
 | -------- | -------- | -------- | -------- |
 | SCAPE 2 | Level 0 | 313 | xx |
 | SCAPE 2 | Level 1 | 313 | xx |
 | SCAPE 2 | Level 2 | 313 | xx |
-| SCAPE 2 | Level 3 | 313 | xx |
+| SCAPE 2 | Level 3 | 1 | xx |
 | -------- | -------- | -------- | -------- |
 | SCAPE 2 | Level x | 313 | xx |
 
