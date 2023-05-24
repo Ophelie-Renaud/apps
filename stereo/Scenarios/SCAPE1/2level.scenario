@@ -65,7 +65,11 @@
         <mainCore>Core0</mainCore>
         <mainComNode>shared_mem</mainComNode>
         <averageDataSize>1000</averageDataSize>
-        <dataTypes/>
+        <dataTypes>
+            <dataType name="uchar" size="8"/>
+            <dataType name="float" size="32"/>
+            <dataType name="int" size="32"/>
+        </dataTypes>
         <specialVertexOperators>
             <specialVertexOperator path="Core0"/>
             <specialVertexOperator path="Core1"/>

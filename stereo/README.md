@@ -104,7 +104,24 @@ You will observe that parallelism is added to the SCAPE2 1 level clustering conf
 
 You will observe that method SCAPE 3 further reduces the complexity of the graph and obtains the best performance in terms of implementation time.
 
-## Testing on target
-...
+| Method | Config | SrDAG | Impl. length|
+| -------- | -------- | -------- | -------- |
+| SCAPE 1 | Level 0 | 313 | xx |
+| SCAPE 1 | Level 1 | 313 | xx |
+| SCAPE 1 | Level 2 | 313 | xx |
+| SCAPE 1 | Level 3 | 313 | xx |
+| -------- | -------- | -------- | -------- |
+| SCAPE 2 | Level 0 | 313 | xx |
+| SCAPE 2 | Level 1 | 313 | xx |
+| SCAPE 2 | Level 2 | 313 | xx |
+| SCAPE 2 | Level 3 | 313 | xx |
+| -------- | -------- | -------- | -------- |
+| SCAPE 2 | Level x | 313 | xx |
 
-![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo/Pic/test.png)
+## Running app
+You have to install default requirement such as CMAKE, SDL2 and .. (see [Requirements for Running Tutorial Generated Code](https://preesm.github.io/tutos/intro/#requirements-for-running-tutorial-generated-code)
+
+To compile and run the generated C code, simply use the CMake project of the /Code/ directory. We strongly advise you to generate the IDE projects and binaries in the /Code/bin directory so as not to mix the source code with OS/IDE specific files. In the /Code/ directory, batch scripts (*.bat and *.sh) are available to automatically create the appropriate folder and launch the CMake project generation for Windows users of code::blocks (CMakeCodeblock.bat) and Visual Studio 2013 (CMakeVS2013.bat) as well as for Linux GCC users (CMakeGCC.sh).
+
+
+![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo/Pic/stereo_principle.png)
