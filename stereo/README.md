@@ -119,9 +119,30 @@ You will observe that method SCAPE 3 further reduces the complexity of the graph
 | SCAPE 2 | Level x | 313 | xx |
 
 ## Running app
-You have to install default requirement such as CMAKE, SDL2 and .. (see [Requirements for Running Tutorial Generated Code](https://preesm.github.io/tutos/intro/#requirements-for-running-tutorial-generated-code)
+You have to install default requirement such as CMake, PThread ,SDL2 and SDL2_ttf (see [Requirements for Running Tutorial Generated Code](https://preesm.github.io/tutos/intro/#requirements-for-running-tutorial-generated-code)
 
 To compile and run the generated C code, simply use the CMake project of the /Code/ directory. We strongly advise you to generate the IDE projects and binaries in the /Code/bin directory so as not to mix the source code with OS/IDE specific files. In the /Code/ directory, batch scripts (*.bat and *.sh) are available to automatically create the appropriate folder and launch the CMake project generation for Windows users of code::blocks (CMakeCodeblock.bat) and Visual Studio 2013 (CMakeVS2013.bat) as well as for Linux GCC users (CMakeGCC.sh).
 
 
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo/Pic/stereo_principle.png)
+
+## Clustering automation
+Automation will be soon available on next release!
+
+Follow the following steps to change the allocation algorithm used in the workflow:
+
+    1. Double-click on “/Workflows/Codegen2.workflow” to open the workflow editor.
+    2. Add a Task before the "Pimm2SrDAG" task
+    3. click on the nex task: on "properties > Basic .." set id = "SCAPE", set plugin identifier = "clustering.raiser.task.identifier"
+    4. On "Properties > Basic .."
+    
+| Name | Value | Comment |
+| -------- | -------- | -------- |
+| Core number | integer | .. |
+| Level number | integer | .. |
+| Non-cluster actor | String | .. |
+| Printer | C | .. |
+| SCAPE mode | integer | enter 1, 2 or 3 |
+| Stack size | integer | .. |
+
+![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo/Pic/scape_workflow.png)
