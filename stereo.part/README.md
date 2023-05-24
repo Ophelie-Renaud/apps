@@ -1,5 +1,6 @@
 # Multinode Partitioning with Core Number and Speed Considerations, and Simulated Metric-Based Readjustments for Transfer Cost for Dataflow Actors
 
+The goal of the method is to distribute a dataflow graph over a set of defined nodes.
 The method encompasses three main steps: the distribution of dataflow actors at the node level, followed by their allocation at the thread level based on core speed and quantity, and ultimately the readjustment of the distribution considering transfer time costs.
 
 ## Node Partitioner
@@ -14,7 +15,7 @@ Following that, the subsequent stage involves adjusting the granularity of each 
 Concluding the process, the simulation suite is employed using the SimGrid tool. If the communication time becomes significant compared to the individual calculation time of the dataflow actors, a readjustment of the subgraphs is carried out. This adjustment is guided by feedback that includes load distribution per node. In a topological order, the method calculates the surplus amount for each subgraph and executes actor migration. Once the load balancing is confirmed, the final parallel code can be generated.
 
 # Tuto
-The relevance of the SCAPE method is illustrated on the stereo image processing application, which receives as input 2 images or a video and returns a depth map.
+The relevance of the partitioning method is illustrated on the stereo image processing application, which receives as input 2 images or a video and returns a depth map.
 
 ## Installation
 - Install PREESM see [getting PREESM](https://preesm.github.io/get/)
@@ -33,6 +34,15 @@ A Tutorial Project can be found here. The project needs to be imported in your w
 Once these steps are completed, the unzipped project files can be accessed either from the “Package Explorer” view of Eclipse, or directly in the “Workspace” directory of eclipse (using your favorite browser).
 
 ## Partitioning automation
-Partitioning automation works as follows:
+The present project contains folders with the name **Algo** for the algorithm model, **Archi** for the architecture model, **Scenarios** for the parameters and constraints of rapid prototyping, **Code** for the generated code, **Algo/generated** for the exported intermediate information, and **Workflows** for the different available rapid prototyping workflows.
 
+#### Node Partitioner
+The node partitioner receives input in the form of the original dataflow graph (Algo/genuineAlgo/stereo.diagram) and the authentic architecture (Archi/genuineArchi.slam). These inputs are filled with the genuine scenario (Scenario/genuineScenario.scenario).
+
+You can generate the partitioned graphs following these steps:
+    1. open node_partitioner.workflow file
+    2. rightclick on the workflow “Run workflow > ..”
+    3. Select genuine.scenario
+    
+.. or take advantage of the provided graphs (Algo/part/..).
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/node_partitioner.png)
