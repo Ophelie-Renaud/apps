@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <key attr.name="delay" attr.type="string" for="edge"/>
+    <graph edgedefault="directed">
+        <data key="name">sub1</data>
+        <node expr="1" id="one" kind="param"/>
+        <node expr="1" id="one_" kind="param"/>
+        <node expr="434" id="width" kind="param"/>
+        <node expr="5" id="nbIterations" kind="param"/>
+        <node expr="maxDisparity-minDisparity" id="nbDisparity" kind="param"/>
+        <node expr="380" id="height" kind="param"/>
+        <node expr="60" id="maxDisparity" kind="param"/>
+        <node expr="20" id="nbSlice" kind="param"/>
+        <node expr="1" id="overlap" kind="param"/>
+        <node expr="4" id="scale" kind="param"/>
+        <node expr="12" id="truncValue" kind="param"/>
+        <node expr="height/nbSlice+2*overlap" id="sliceHeight" kind="param"/>
+        <node expr="0" id="minDisparity" kind="param"/>
+        <node expr="0" id="zero" kind="param"/>
+        <node expr="height*width" id="size" kind="param"/>
+        <node id="CostConstruction" kind="actor">
+            <data key="graph_desc">Code/include/costConstruction.h</data>
+            <loop name="costConstruction">
+                <param direction="IN" isConfig="true"
+                    name="height" type="int"/>
+                <param direction="IN" isConfig="true"
+                    name="width" type="int"/>
+                <param direction="IN" isConfig="true"
+                    name="truncValue" type="float"/>
+                <param direction="IN" isConfig="false"
+                    name="disparity" type="unsigned char"/>
+                <param direction="IN" isConfig="false"
+                    name="grayL" type="float"/>
+                <param direction="IN" isConfig="false"
+                    name="grayR" type="float"/>
+                <param direction="IN" isConfig="false"
+                    name="cenL" type="unsigned char"/>
+                <param direction="IN" isConfig="false"
+                    name="cenR" type="unsigned char"/>
+                <param direction="OUT" isConfig="false"
+                    name="disparityError" type="float"/>
+                <param direction="IN" isConfig="false"
+                    name="back" type="unsigned char"/>
+            </loop>
+            <port kind="cfg_input" name="truncValue"/>
+            <port kind="cfg_input" name="width"/>
+            <port kind="cfg_input" name="height"/>
+            <port annotation="READ_ONLY" expr="height*width"
+                kind="input" name="grayL"/>
+            <port annotation="READ_ONLY" expr="height*width"
+                kind="input" name="grayR"/>
+            <port annotation="READ_ONLY" expr="height*width"
+                kind="input" name="cenL"/>
+            <port annotation="READ_ONLY" expr="height*width"
+                kind="input" name="cenR"/>
+            <port annotation="READ_ONLY" expr="1" kind="input" name="disparity"/>
+            <port annotation="NONE" expr="1" kind="input" name="back"/>
+            <port annotation="NONE" expr="height*width"
+                kind="output" name="disparityError"/>
+        </node>
+        <node id="disparitySelect" kind="actor">
+            <port kind="cfg_input" name="scale"/>
+            <port kind="cfg_input" name="width"/>
+            <port kind="cfg_input" name="height"/>
+            <port kind="cfg_input" name="minDisparity"/>
+            <port kind="cfg_input" name="nbDisparity"/>
+            <port annotation="NONE" expr="height*width"
+                kind="input" name="aggrgateDisparity"/>
+            <port annotation="NONE" expr="1" kind="input" name="disparity"/>
+            <port annotation="NONE" expr="height*width+1"
+                kind="input" name="bestCostFeed"/>
+            <port annotation="NONE" expr="height*width"
+                kind="input" name="currentResult"/>
+            <port annotation="NONE" expr="height*width"
+                kind="output" name="result"/>
+            <port annotation="NONE" expr="height*width+1"
+                kind="output" name="backBestCost"/>
+        </node>
+        <node id="AggregateCost" kind="actor">
+            <data key="graph_desc">Code/include/aggregateCost.h</data>
+            <loop name="aggregateCost">
+                <param direction="IN" isConfig="true"
+                    name="height" type="int"/>
+                <param direction="IN" isConfig="true"
+                    name="width" type="int"/>
+                <param direction="IN" isConfig="true"
+                    name="nbIterations" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="disparityError" type="float"/>
+                <param direction="IN" isConfig="false"
+                    name="offsets" type="int"/>
+                <param direction="IN" isConfig="false"
+                    name="hWeights" type="float"/>
+                <param direction="IN" isConfig="false"
+                    name="vWeights" type="float"/>
+                <param direction="OUT" isConfig="false"
+                    name="aggregatedDisparity" type="float"/>
+            </loop>
+            <port kind="cfg_input" name="width"/>
+            <port kind="cfg_input" name="height"/>
+            <port kind="cfg_input" name="nbIterations"/>
+            <port annotation="NONE" expr="nbIterations"
+                kind="input" name="offsets"/>
+            <port annotation="READ_ONLY"
+                expr="height*width*3*nbIterations" kind="input" name="vWeights"/>
+            <port annotation="READ_ONLY"
+                expr="height*width*3*nbIterations" kind="input" name="hWeights"/>
+            <port annotation="READ_ONLY" expr="height*width"
+                kind="input" name="disparityError"/>
+            <port annotation="NONE" expr="height*width"
+                kind="output" name="aggregatedDisparity"/>
+        </node>
+        <node id="cenL_in" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="cenL_in"/>
+        </node>
+        <node id="cenR_in" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="cenR_in"/>
+        </node>
+        <node id="disparity_in" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="disparity_in"/>
+        </node>
+        <node id="grayL_in" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="grayL_in"/>
+        </node>
+        <node id="grayR_in" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="grayR_in"/>
+        </node>
+        <node id="hWeights_in" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="hWeights_in"/>
+        </node>
+        <node id="vWeights_in" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="vWeights_in"/>
+        </node>
+        <node id="offsets_in" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="offsets_in"/>
+        </node>
+        <node id="setBC" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="setBC"/>
+        </node>
+        <node id="setCR" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="setCR"/>
+        </node>
+        <node id="setD" kind="src">
+            <port annotation="NONE" expr="0" kind="output" name="setD"/>
+        </node>
+        <node id="brd_cenL" kind="broadcast">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="brd_cenR" kind="broadcast">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="brd_grayL" kind="broadcast">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="brd_grayR" kind="broadcast">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="frk_disparity" kind="fork">
+            <port annotation="NONE" expr="0" kind="input" name="newPort"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="brd_disparity" kind="broadcast">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="frh_hWeughts" kind="fork">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="frk_vWeights" kind="fork">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="frk_offsets" kind="fork">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="Broadcast5" kind="broadcast">
+            <port kind="cfg_input" name="size"/>
+            <port annotation="NONE" expr="size" kind="input" name="in"/>
+            <port annotation="WRITE_ONLY" expr="size"
+                kind="output" name="out0"/>
+            <port annotation="NONE" expr="size" kind="output" name="out1"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+        </node>
+        <node id="out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="out"/>
+        </node>
+        <node id="cenL_out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="cenL_out"/>
+        </node>
+        <node id="cenR_out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="cenR_out"/>
+        </node>
+        <node id="disparity_out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="disparity_out"/>
+        </node>
+        <node id="grayL_out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="grayL_out"/>
+        </node>
+        <node id="grayR_out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="grayR_out"/>
+        </node>
+        <node id="hWeights_out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="hWeights_out"/>
+        </node>
+        <node id="vWeights_out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="vWeights_out"/>
+        </node>
+        <node id="offsets_out" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="offsets_out"/>
+        </node>
+        <node id="getD" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="getD"/>
+        </node>
+        <node id="getCR" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="getCR"/>
+        </node>
+        <node id="getBC" kind="snk">
+            <port annotation="NONE" expr="0" kind="input" name="getBC"/>
+        </node>
+        <node expr="0" getter="getBC"
+            id="disparitySelect_backBestCost__disparitySelect_bestCostFeed"
+            kind="delay" level="none" setter="setBC">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="getCR"
+            id="Broadcast5_out1__disparitySelect_currentResult"
+            kind="delay" level="none" setter="setCR">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="getD"
+            id="Broadcast5_back__CostConstruction_back"
+            kind="delay" level="none" setter="setD">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <edge expr="0" kind="fifo" source="disparitySelect"
+            sourceport="backBestCost" target="disparitySelect"
+            targetport="bestCostFeed" type="void">
+            <data key="delay">disparitySelect_backBestCost__disparitySelect_bestCostFeed</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="Broadcast5"
+            sourceport="back" target="CostConstruction"
+            targetport="back" type="void">
+            <data key="delay">Broadcast5_back__CostConstruction_back</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="Broadcast5"
+            sourceport="out1" target="disparitySelect"
+            targetport="currentResult" type="void">
+            <data key="delay">Broadcast5_out1__disparitySelect_currentResult</data>
+        </edge>
+        <edge kind="fifo" source="CostConstruction"
+            sourceport="disparityError" target="AggregateCost"
+            targetport="disparityError" type="void"/>
+        <edge kind="fifo" source="AggregateCost"
+            sourceport="aggregatedDisparity"
+            target="disparitySelect"
+            targetport="aggrgateDisparity" type="void"/>
+        <edge kind="fifo" source="cenL_in" sourceport="cenL_in"
+            target="brd_cenL" targetport="in" type="void"/>
+        <edge kind="fifo" source="cenR_in" sourceport="cenR_in"
+            target="brd_cenR" targetport="in" type="void"/>
+        <edge kind="fifo" source="grayL_in" sourceport="grayL_in"
+            target="brd_grayL" targetport="in" type="void"/>
+        <edge kind="fifo" source="grayR_in" sourceport="grayR_in"
+            target="brd_grayR" targetport="in" type="void"/>
+        <edge kind="fifo" source="disparity_in"
+            sourceport="disparity_in" target="frk_disparity"
+            targetport="newPort" type="void"/>
+        <edge kind="fifo" source="frk_disparity"
+            sourceport="out0" target="brd_disparity"
+            targetport="in" type="void"/>
+        <edge kind="fifo" source="offsets_in"
+            sourceport="offsets_in" target="frk_offsets"
+            targetport="in" type="void"/>
+        <edge kind="fifo" source="hWeights_in"
+            sourceport="hWeights_in" target="frh_hWeughts"
+            targetport="in" type="void"/>
+        <edge kind="fifo" source="vWeights_in"
+            sourceport="vWeights_in" target="frk_vWeights"
+            targetport="in" type="void"/>
+        <edge kind="fifo" source="brd_cenL" sourceport="out0"
+            target="CostConstruction" targetport="cenL" type="void"/>
+        <edge kind="fifo" source="brd_cenR" sourceport="out0"
+            target="CostConstruction" targetport="cenR" type="void"/>
+        <edge kind="fifo" source="brd_grayR" sourceport="out0"
+            target="CostConstruction" targetport="grayR" type="void"/>
+        <edge kind="fifo" source="brd_grayL" sourceport="out0"
+            target="CostConstruction" targetport="grayL" type="void"/>
+        <edge kind="fifo" source="frh_hWeughts" sourceport="out0"
+            target="AggregateCost" targetport="hWeights" type="void"/>
+        <edge kind="fifo" source="frk_vWeights" sourceport="out0"
+            target="AggregateCost" targetport="vWeights" type="void"/>
+        <edge kind="fifo" source="frk_offsets" sourceport="out0"
+            target="AggregateCost" targetport="offsets" type="void"/>
+        <edge kind="fifo" source="brd_disparity"
+            sourceport="out0" target="CostConstruction"
+            targetport="disparity" type="void"/>
+        <edge kind="fifo" source="brd_disparity"
+            sourceport="out1" target="disparitySelect"
+            targetport="disparity" type="void"/>
+        <edge kind="fifo" source="setBC" sourceport="setBC"
+            target="disparitySelect_backBestCost__disparitySelect_bestCostFeed"
+            targetport="set" type="void"/>
+        <edge kind="fifo" source="disparitySelect"
+            sourceport="result" target="Broadcast5"
+            targetport="in" type="void"/>
+        <edge kind="fifo" source="Broadcast5" sourceport="out0"
+            target="out" targetport="out" type="void"/>
+        <edge kind="fifo" source="setD" sourceport="setD"
+            target="Broadcast5_back__CostConstruction_back"
+            targetport="set" type="void"/>
+        <edge kind="fifo" source="setCR" sourceport="setCR"
+            target="Broadcast5_out1__disparitySelect_currentResult"
+            targetport="set" type="void"/>
+        <edge kind="fifo" source="brd_cenL" sourceport="out1"
+            target="cenL_out" targetport="cenL_out" type="void"/>
+        <edge kind="fifo" source="brd_cenR" sourceport="out1"
+            target="cenR_out" targetport="cenR_out" type="void"/>
+        <edge kind="fifo" source="brd_grayL" sourceport="out1"
+            target="grayL_out" targetport="grayL_out" type="void"/>
+        <edge kind="fifo" source="brd_grayR" sourceport="out1"
+            target="grayR_out" targetport="grayR_out" type="void"/>
+        <edge kind="fifo" source="frh_hWeughts" sourceport="out1"
+            target="hWeights_out" targetport="hWeights_out" type="void"/>
+        <edge kind="fifo" source="frk_disparity"
+            sourceport="out1" target="disparity_out"
+            targetport="disparity_out" type="void"/>
+        <edge kind="fifo" source="frk_vWeights" sourceport="out1"
+            target="vWeights_out" targetport="vWeights_out" type="void"/>
+        <edge kind="fifo"
+            source="Broadcast5_back__CostConstruction_back"
+            sourceport="get" target="getD" targetport="getD" type="void"/>
+        <edge kind="fifo"
+            source="disparitySelect_backBestCost__disparitySelect_bestCostFeed"
+            sourceport="get" target="getBC" targetport="getBC" type="void"/>
+        <edge kind="fifo"
+            source="Broadcast5_out1__disparitySelect_currentResult"
+            sourceport="get" target="getCR" targetport="getCR" type="void"/>
+        <edge kind="fifo" source="frk_offsets" sourceport="out1"
+            target="offsets_out" targetport="offsets_out" type="void"/>
+        <edge kind="dependency" source="height" target="size"/>
+        <edge kind="dependency" source="width" target="size"/>
+        <edge kind="dependency" source="overlap" target="sliceHeight"/>
+        <edge kind="dependency" source="nbSlice" target="sliceHeight"/>
+        <edge kind="dependency" source="height" target="sliceHeight"/>
+        <edge kind="dependency" source="minDisparity" target="nbDisparity"/>
+        <edge kind="dependency" source="maxDisparity" target="nbDisparity"/>
+        <edge kind="dependency" source="truncValue"
+            target="CostConstruction" targetport="truncValue"/>
+        <edge kind="dependency" source="width"
+            target="CostConstruction" targetport="width"/>
+        <edge kind="dependency" source="height"
+            target="CostConstruction" targetport="height"/>
+        <edge kind="dependency" source="width"
+            target="AggregateCost" targetport="width"/>
+        <edge kind="dependency" source="height"
+            target="AggregateCost" targetport="height"/>
+        <edge kind="dependency" source="nbIterations"
+            target="AggregateCost" targetport="nbIterations"/>
+        <edge kind="dependency" source="scale"
+            target="disparitySelect" targetport="scale"/>
+        <edge kind="dependency" source="width"
+            target="disparitySelect" targetport="width"/>
+        <edge kind="dependency" source="height"
+            target="disparitySelect" targetport="height"/>
+        <edge kind="dependency" source="minDisparity"
+            target="disparitySelect" targetport="minDisparity"/>
+        <edge kind="dependency" source="nbIterations"
+            target="disparitySelect" targetport="nbDisparity"/>
+        <edge kind="dependency" source="size" target="Broadcast5" targetport="size"/>
+    </graph>
+</graphml>

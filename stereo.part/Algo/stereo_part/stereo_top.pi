@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="delay" attr.type="string" for="edge"/>
+    <graph edgedefault="directed">
+        <data key="name">stereo_top</data>
+        <node id="sub0" kind="actor">
+            <port annotation="NONE" expr="0" kind="output" name="cenL"/>
+            <port annotation="NONE" expr="0" kind="output" name="cenR"/>
+            <port annotation="NONE" expr="0" kind="output" name="disparity"/>
+            <port annotation="NONE" expr="0" kind="output" name="grayL"/>
+            <port annotation="NONE" expr="0" kind="output" name="grayR"/>
+            <port annotation="NONE" expr="0" kind="output" name="hWeigths"/>
+            <port annotation="NONE" expr="0" kind="output" name="offsets"/>
+            <port annotation="NONE" expr="0" kind="output" name="setBC"/>
+            <port annotation="NONE" expr="0" kind="output" name="setCR"/>
+            <port annotation="NONE" expr="0" kind="output" name="setD"/>
+            <port annotation="NONE" expr="0" kind="output" name="vWeights"/>
+        </node>
+        <node id="sub1" kind="actor">
+            <port annotation="NONE" expr="0" kind="input" name="cenL_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="cenR_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="disparity_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="grayL_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="grayR_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="hWeigths_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="offsets_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="setBC"/>
+            <port annotation="NONE" expr="0" kind="input" name="setCR"/>
+            <port annotation="NONE" expr="0" kind="input" name="setD"/>
+            <port annotation="NONE" expr="0" kind="input" name="vWeigths_in"/>
+            <port annotation="NONE" expr="0" kind="output" name="cenL_out"/>
+            <port annotation="NONE" expr="0" kind="output" name="cenR_out"/>
+            <port annotation="NONE" expr="0" kind="output" name="disparity_out"/>
+            <port annotation="NONE" expr="0" kind="output" name="grayL_out"/>
+            <port annotation="NONE" expr="0" kind="output" name="grayR_out"/>
+            <port annotation="NONE" expr="0" kind="output" name="hWeights_out"/>
+            <port annotation="NONE" expr="0" kind="output" name="offsets_out"/>
+            <port annotation="NONE" expr="0" kind="output" name="getBC"/>
+            <port annotation="NONE" expr="0" kind="output" name="getCR"/>
+            <port annotation="NONE" expr="0" kind="output" name="getD"/>
+            <port annotation="NONE" expr="0" kind="output" name="vWeights_out"/>
+        </node>
+        <node id="sub2" kind="actor">
+            <port annotation="NONE" expr="0" kind="input" name="cenL_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="cenR_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="disparity_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="grayL_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="grayR_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="hWeigths_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="offsets_in"/>
+            <port annotation="NONE" expr="0" kind="input" name="setBC"/>
+            <port annotation="NONE" expr="0" kind="input" name="setCR"/>
+            <port annotation="NONE" expr="0" kind="input" name="setD"/>
+            <port annotation="NONE" expr="0" kind="input" name="vWeigths_in"/>
+        </node>
+        <node expr="0" getter="" id="sub0_cenL__sub1_cenL"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub0_cenR__sub1_cenR"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub0_disparity__sub1_disparity" kind="delay"
+            level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub0_grayL__sub1_grayL"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub0_grayR__sub1_grayR"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub0_hWeigths__sub1_hWeigths" kind="delay"
+            level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub0_offsets__sub1_offsets"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub0_setBC__sub1_setBC"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub0_setCR__sub1_setCR"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub0_setD__sub1_setD"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub0_vWeights__sub1_vWeigths" kind="delay"
+            level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub1_cenL_out__sub2_cenL_in"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub1_cenR_out__sub2_cenR_in"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub1_disparity_out__sub2_disparity_in"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub1_grayL_out__sub2_grayL_in" kind="delay"
+            level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub1_grayR_out__sub2_grayR_in" kind="delay"
+            level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub1_hWeights_out__sub2_hWeigths_in" kind="delay"
+            level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub1_offsets_out__sub2_offsets_in" kind="delay"
+            level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub1_getBC__sub2_setBC"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub1_getCR__sub2_setCR"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub1_getD__sub2_setD"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter=""
+            id="sub1_vWeights_out__sub2_vWeigths_in" kind="delay"
+            level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="cenL" target="sub1" targetport="cenL_in" type="void">
+            <data key="delay">sub0_cenL__sub1_cenL</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="cenR" target="sub1" targetport="cenR_in" type="void">
+            <data key="delay">sub0_cenR__sub1_cenR</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="disparity" target="sub1"
+            targetport="disparity_in" type="void">
+            <data key="delay">sub0_disparity__sub1_disparity</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="grayL" target="sub1"
+            targetport="grayL_in" type="void">
+            <data key="delay">sub0_grayL__sub1_grayL</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="grayR" target="sub1"
+            targetport="grayR_in" type="void">
+            <data key="delay">sub0_grayR__sub1_grayR</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="hWeigths" target="sub1"
+            targetport="hWeigths_in" type="void">
+            <data key="delay">sub0_hWeigths__sub1_hWeigths</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="offsets" target="sub1"
+            targetport="offsets_in" type="void">
+            <data key="delay">sub0_offsets__sub1_offsets</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="setBC" target="sub1" targetport="setBC" type="void">
+            <data key="delay">sub0_setBC__sub1_setBC</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="setCR" target="sub1" targetport="setCR" type="void">
+            <data key="delay">sub0_setCR__sub1_setCR</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="setD" target="sub1" targetport="setD" type="void">
+            <data key="delay">sub0_setD__sub1_setD</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="vWeights" target="sub1"
+            targetport="vWeigths_in" type="void">
+            <data key="delay">sub0_vWeights__sub1_vWeigths</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="cenL_out" target="sub2"
+            targetport="cenL_in" type="void">
+            <data key="delay">sub1_cenL_out__sub2_cenL_in</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="cenR_out" target="sub2"
+            targetport="cenR_in" type="void">
+            <data key="delay">sub1_cenR_out__sub2_cenR_in</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="disparity_out" target="sub2"
+            targetport="disparity_in" type="void">
+            <data key="delay">sub1_disparity_out__sub2_disparity_in</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="grayL_out" target="sub2"
+            targetport="grayL_in" type="void">
+            <data key="delay">sub1_grayL_out__sub2_grayL_in</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="grayR_out" target="sub2"
+            targetport="grayR_in" type="void">
+            <data key="delay">sub1_grayR_out__sub2_grayR_in</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="hWeights_out" target="sub2"
+            targetport="hWeigths_in" type="void">
+            <data key="delay">sub1_hWeights_out__sub2_hWeigths_in</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="offsets_out" target="sub2"
+            targetport="offsets_in" type="void">
+            <data key="delay">sub1_offsets_out__sub2_offsets_in</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="getBC" target="sub2" targetport="setBC" type="void">
+            <data key="delay">sub1_getBC__sub2_setBC</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="getCR" target="sub2" targetport="setCR" type="void">
+            <data key="delay">sub1_getCR__sub2_setCR</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="getD" target="sub2" targetport="setD" type="void">
+            <data key="delay">sub1_getD__sub2_setD</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub1"
+            sourceport="vWeights_out" target="sub2"
+            targetport="vWeigths_in" type="void">
+            <data key="delay">sub1_vWeights_out__sub2_vWeigths_in</data>
+        </edge>
+    </graph>
+</graphml>

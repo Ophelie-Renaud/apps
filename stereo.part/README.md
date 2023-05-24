@@ -12,3 +12,27 @@ Following that, the subsequent stage involves adjusting the granularity of each 
 
 ## Thread Readjustment
 Concluding the process, the simulation suite is employed using the SimGrid tool. If the communication time becomes significant compared to the individual calculation time of the dataflow actors, a readjustment of the subgraphs is carried out. This adjustment is guided by feedback that includes load distribution per node. In a topological order, the method calculates the surplus amount for each subgraph and executes actor migration. Once the load balancing is confirmed, the final parallel code can be generated.
+
+# Tuto
+The relevance of the SCAPE method is illustrated on the stereo image processing application, which receives as input 2 images or a video and returns a depth map.
+
+## Installation
+- Install PREESM see [getting PREESM](https://preesm.github.io/get/)
+- download this present project
+
+## Open project
+A Tutorial Project can be found here. The project needs to be imported in your workspace. To do so, follow these steps:
+
+    1. Go to “File > Import…”
+    2. In the wizard, select “General > Existing Projects into Workspace”.
+    3. Click “Next”
+    4. Select “Select archive file”, then “Browse…”
+    5. Select the zip archive you downloaded
+    6. Click “Next”.
+
+Once these steps are completed, the unzipped project files can be accessed either from the “Package Explorer” view of Eclipse, or directly in the “Workspace” directory of eclipse (using your favorite browser).
+
+## Partitioning automation
+Partitioning automation works as follows:
+
+![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/node_partitioner.png)

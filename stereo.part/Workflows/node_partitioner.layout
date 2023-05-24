@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+   <vertices>
+      <vertex id="scenario" x="122" y="386"/>
+      <vertex id="Node Partitioner" x="382" y="402"/>
+   </vertices>
+</layout>

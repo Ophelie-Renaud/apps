@@ -348,7 +348,8 @@
                 kind="input" name="bestCostFeed"/>
             <port annotation="NONE" expr="height*width"
                 kind="input" name="currentResult"/>
-            <port annotation="NONE" expr="0" kind="output" name="result"/>
+            <port annotation="NONE" expr="height*width"
+                kind="output" name="result"/>
             <port annotation="NONE" expr="height*width+1"
                 kind="output" name="backBestCost"/>
         </node>
@@ -585,7 +586,7 @@
             target="ComputeHorWeights" targetport="rgbL" type="uchar"/>
         <edge kind="fifo" source="disparitySelect"
             sourceport="result" target="Broadcast5"
-            targetport="in" type="void"/>
+            targetport="in" type="uchar"/>
         <edge kind="fifo" source="broadcast2" sourceport="out1"
             target="CostConstruction" targetport="grayR" type="float"/>
         <edge kind="fifo" source="Broadcast5" sourceport="out0"
