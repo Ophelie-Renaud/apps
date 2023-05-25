@@ -60,4 +60,4 @@ You can simulate the intranode resource allocation and observe the generated gan
 
 ### Simulation
 
-$add SimGrid part$
+$add \ SimGrid \ part$

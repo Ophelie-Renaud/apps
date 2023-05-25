@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<layout>
-   <vertices>
-      <vertex id="scenario" x="336" y="380"/>
-      <vertex id="Partitioner" x="588" y="380"/>
-   </vertices>
-</layout>
