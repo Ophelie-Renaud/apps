@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <flags>
+        <sizesAreInBit/>
+    </flags>
+    <files>
+        <algorithm url="/org.ietr.preesm.dummy.abc/Algo/ABC/genuine/abc_genuine_scape.pi"/>
+        <architecture url="/org.ietr.preesm.dummy.abc/Archi/24CoresX86.slam"/>
+        <codegenDirectory url="/org.ietr.preesm.dummy.abc/Code/generated"/>
+    </files>
+    <constraints excelUrl="">
+        <constraintGroup>
+            <operator name="Core0"/>
+            <task name="abc_genuine_scape/A"/>
+            <task name="abc_genuine_scape/B_0"/>
+            <task name="abc_genuine_scape/B_1"/>
+            <task name="abc_genuine_scape/B_2"/>
+            <task name="abc_genuine_scape/B_3"/>
+            <task name="abc_genuine_scape/B_4"/>
+            <task name="abc_genuine_scape/B_5"/>
+            <task name="abc_genuine_scape/B_6"/>
+            <task name="abc_genuine_scape/B_7"/>
+            <task name="abc_genuine_scape/B_8"/>
+            <task name="abc_genuine_scape/B_9"/>
+            <task name="abc_genuine_scape/B_10"/>
+            <task name="abc_genuine_scape/B_11"/>
+            <task name="abc_genuine_scape/B_12"/>
+            <task name="abc_genuine_scape/B_13"/>
+            <task name="abc_genuine_scape/B_14"/>
+            <task name="abc_genuine_scape/B_15"/>
+            <task name="abc_genuine_scape/B_16"/>
+            <task name="abc_genuine_scape/set"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core1"/>
+            <task name="abc_genuine_scape/A"/>
+            <task name="abc_genuine_scape/B_1"/>
+            <task name="abc_genuine_scape/B_0"/>
+            <task name="abc_genuine_scape/B_2"/>
+            <task name="abc_genuine_scape/B_3"/>
+            <task name="abc_genuine_scape/B_4"/>
+            <task name="abc_genuine_scape/B_5"/>
+            <task name="abc_genuine_scape/B_6"/>
+            <task name="abc_genuine_scape/B_7"/>
+            <task name="abc_genuine_scape/B_8"/>
+            <task name="abc_genuine_scape/B_9"/>
+            <task name="abc_genuine_scape/B_10"/>
+            <task name="abc_genuine_scape/B_11"/>
+            <task name="abc_genuine_scape/B_12"/>
+            <task name="abc_genuine_scape/B_13"/>
+            <task name="abc_genuine_scape/B_14"/>
+            <task name="abc_genuine_scape/B_15"/>
+            <task name="abc_genuine_scape/B_16"/>
+            <task name="abc_genuine_scape/set"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core2"/>
+            <task name="abc_genuine_scape/A"/>
+            <task name="abc_genuine_scape/B_0"/>
+            <task name="abc_genuine_scape/B_1"/>
+            <task name="abc_genuine_scape/B_2"/>
+            <task name="abc_genuine_scape/B_3"/>
+            <task name="abc_genuine_scape/B_4"/>
+            <task name="abc_genuine_scape/B_5"/>
+            <task name="abc_genuine_scape/B_6"/>
+            <task name="abc_genuine_scape/B_7"/>
+            <task name="abc_genuine_scape/B_9"/>
+            <task name="abc_genuine_scape/B_8"/>
+            <task name="abc_genuine_scape/B_10"/>
+            <task name="abc_genuine_scape/B_11"/>
+            <task name="abc_genuine_scape/B_12"/>
+            <task name="abc_genuine_scape/B_13"/>
+            <task name="abc_genuine_scape/B_14"/>
+            <task name="abc_genuine_scape/B_15"/>
+            <task name="abc_genuine_scape/B_16"/>
+            <task name="abc_genuine_scape/set"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core3"/>
+            <task name="abc_genuine_scape/A"/>
+            <task name="abc_genuine_scape/B_0"/>
+            <task name="abc_genuine_scape/B_1"/>
+            <task name="abc_genuine_scape/B_2"/>
+            <task name="abc_genuine_scape/B_3"/>
+            <task name="abc_genuine_scape/B_4"/>
+            <task name="abc_genuine_scape/B_5"/>
+            <task name="abc_genuine_scape/B_6"/>
+            <task name="abc_genuine_scape/B_7"/>
+            <task name="abc_genuine_scape/B_8"/>
+            <task name="abc_genuine_scape/B_9"/>
+            <task name="abc_genuine_scape/B_10"/>
+            <task name="abc_genuine_scape/B_11"/>
+            <task name="abc_genuine_scape/B_12"/>
+            <task name="abc_genuine_scape/B_13"/>
+            <task name="abc_genuine_scape/B_16"/>
+            <task name="abc_genuine_scape/B_14"/>
+            <task name="abc_genuine_scape/B_15"/>
+            <task name="abc_genuine_scape/set"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core4"/>
+            <task name="abc_genuine_scape/A"/>
+            <task name="abc_genuine_scape/B_0"/>
+            <task name="abc_genuine_scape/B_1"/>
+            <task name="abc_genuine_scape/B_2"/>
+            <task name="abc_genuine_scape/B_3"/>
+            <task name="abc_genuine_scape/B_4"/>
+            <task name="abc_genuine_scape/B_5"/>
+            <task name="abc_genuine_scape/B_6"/>
+            <task name="abc_genuine_scape/B_7"/>
+            <task name="abc_genuine_scape/B_9"/>
+            <task name="abc_genuine_scape/B_8"/>
+            <task name="abc_genuine_scape/B_10"/>
+            <task name="abc_genuine_scape/B_11"/>
+            <task name="abc_genuine_scape/B_12"/>
+            <task name="abc_genuine_scape/B_13"/>
+            <task name="abc_genuine_scape/B_14"/>
+            <task name="abc_genuine_scape/B_15"/>
+            <task name="abc_genuine_scape/B_16"/>
+            <task name="abc_genuine_scape/set"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core5"/>
+            <task name="abc_genuine_scape/A"/>
+            <task name="abc_genuine_scape/B_0"/>
+            <task name="abc_genuine_scape/B_1"/>
+            <task name="abc_genuine_scape/B_2"/>
+            <task name="abc_genuine_scape/B_3"/>
+            <task name="abc_genuine_scape/B_4"/>
+            <task name="abc_genuine_scape/B_5"/>
+            <task name="abc_genuine_scape/B_6"/>
+            <task name="abc_genuine_scape/B_7"/>
+            <task name="abc_genuine_scape/B_8"/>
+            <task name="abc_genuine_scape/B_9"/>
+            <task name="abc_genuine_scape/B_10"/>
+            <task name="abc_genuine_scape/B_11"/>
+            <task name="abc_genuine_scape/B_12"/>
+            <task name="abc_genuine_scape/B_13"/>
+            <task name="abc_genuine_scape/B_14"/>
+            <task name="abc_genuine_scape/B_15"/>
+            <task name="abc_genuine_scape/B_16"/>
+            <task name="abc_genuine_scape/set"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core6"/>
+            <task name="abc_genuine_scape/B_17"/>
+            <task name="abc_genuine_scape/B_18"/>
+            <task name="abc_genuine_scape/B_19"/>
+            <task name="abc_genuine_scape/B_20"/>
+            <task name="abc_genuine_scape/B_21"/>
+            <task name="abc_genuine_scape/B_22"/>
+            <task name="abc_genuine_scape/B_23"/>
+            <task name="abc_genuine_scape/B_24"/>
+            <task name="abc_genuine_scape/B_25"/>
+            <task name="abc_genuine_scape/B_26"/>
+            <task name="abc_genuine_scape/B_27"/>
+            <task name="abc_genuine_scape/B_28"/>
+            <task name="abc_genuine_scape/B_29"/>
+            <task name="abc_genuine_scape/B_30"/>
+            <task name="abc_genuine_scape/B_31"/>
+            <task name="abc_genuine_scape/B_32"/>
+            <task name="abc_genuine_scape/B_33"/>
+            <task name="abc_genuine_scape/B_34"/>
+            <task name="abc_genuine_scape/B_35"/>
+            <task name="abc_genuine_scape/B_36"/>
+            <task name="abc_genuine_scape/B_37"/>
+            <task name="abc_genuine_scape/B_38"/>
+            <task name="abc_genuine_scape/B_39"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core7"/>
+            <task name="abc_genuine_scape/B_17"/>
+            <task name="abc_genuine_scape/B_18"/>
+            <task name="abc_genuine_scape/B_19"/>
+            <task name="abc_genuine_scape/B_20"/>
+            <task name="abc_genuine_scape/B_21"/>
+            <task name="abc_genuine_scape/B_22"/>
+            <task name="abc_genuine_scape/B_23"/>
+            <task name="abc_genuine_scape/B_24"/>
+            <task name="abc_genuine_scape/B_25"/>
+            <task name="abc_genuine_scape/B_26"/>
+            <task name="abc_genuine_scape/B_27"/>
+            <task name="abc_genuine_scape/B_28"/>
+            <task name="abc_genuine_scape/B_29"/>
+            <task name="abc_genuine_scape/B_30"/>
+            <task name="abc_genuine_scape/B_31"/>
+            <task name="abc_genuine_scape/B_32"/>
+            <task name="abc_genuine_scape/B_33"/>
+            <task name="abc_genuine_scape/B_34"/>
+            <task name="abc_genuine_scape/B_35"/>
+            <task name="abc_genuine_scape/B_36"/>
+            <task name="abc_genuine_scape/B_37"/>
+            <task name="abc_genuine_scape/B_38"/>
+            <task name="abc_genuine_scape/B_39"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core8"/>
+            <task name="abc_genuine_scape/B_17"/>
+            <task name="abc_genuine_scape/B_18"/>
+            <task name="abc_genuine_scape/B_19"/>
+            <task name="abc_genuine_scape/B_20"/>
+            <task name="abc_genuine_scape/B_21"/>
+            <task name="abc_genuine_scape/B_22"/>
+            <task name="abc_genuine_scape/B_23"/>
+            <task name="abc_genuine_scape/B_24"/>
+            <task name="abc_genuine_scape/B_25"/>
+            <task name="abc_genuine_scape/B_26"/>
+            <task name="abc_genuine_scape/B_27"/>
+            <task name="abc_genuine_scape/B_28"/>
+            <task name="abc_genuine_scape/B_29"/>
+            <task name="abc_genuine_scape/B_30"/>
+            <task name="abc_genuine_scape/B_31"/>
+            <task name="abc_genuine_scape/B_32"/>
+            <task name="abc_genuine_scape/B_33"/>
+            <task name="abc_genuine_scape/B_34"/>
+            <task name="abc_genuine_scape/B_35"/>
+            <task name="abc_genuine_scape/B_36"/>
+            <task name="abc_genuine_scape/B_37"/>
+            <task name="abc_genuine_scape/B_38"/>
+            <task name="abc_genuine_scape/B_39"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core9"/>
+            <task name="abc_genuine_scape/B_39"/>
+            <task name="abc_genuine_scape/B_38"/>
+            <task name="abc_genuine_scape/B_37"/>
+            <task name="abc_genuine_scape/B_36"/>
+            <task name="abc_genuine_scape/B_35"/>
+            <task name="abc_genuine_scape/B_34"/>
+            <task name="abc_genuine_scape/B_33"/>
+            <task name="abc_genuine_scape/B_32"/>
+            <task name="abc_genuine_scape/B_31"/>
+            <task name="abc_genuine_scape/B_30"/>
+            <task name="abc_genuine_scape/B_29"/>
+            <task name="abc_genuine_scape/B_28"/>
+            <task name="abc_genuine_scape/B_27"/>
+            <task name="abc_genuine_scape/B_26"/>
+            <task name="abc_genuine_scape/B_25"/>
+            <task name="abc_genuine_scape/B_24"/>
+            <task name="abc_genuine_scape/B_23"/>
+            <task name="abc_genuine_scape/B_22"/>
+            <task name="abc_genuine_scape/B_21"/>
+            <task name="abc_genuine_scape/B_20"/>
+            <task name="abc_genuine_scape/B_19"/>
+            <task name="abc_genuine_scape/B_18"/>
+            <task name="abc_genuine_scape/B_17"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core10"/>
+            <task name="abc_genuine_scape/B_17"/>
+            <task name="abc_genuine_scape/B_18"/>
+            <task name="abc_genuine_scape/B_19"/>
+            <task name="abc_genuine_scape/B_20"/>
+            <task name="abc_genuine_scape/B_21"/>
+            <task name="abc_genuine_scape/B_22"/>
+            <task name="abc_genuine_scape/B_23"/>
+            <task name="abc_genuine_scape/B_24"/>
+            <task name="abc_genuine_scape/B_25"/>
+            <task name="abc_genuine_scape/B_26"/>
+            <task name="abc_genuine_scape/B_27"/>
+            <task name="abc_genuine_scape/B_28"/>
+            <task name="abc_genuine_scape/B_29"/>
+            <task name="abc_genuine_scape/B_30"/>
+            <task name="abc_genuine_scape/B_31"/>
+            <task name="abc_genuine_scape/B_32"/>
+            <task name="abc_genuine_scape/B_33"/>
+            <task name="abc_genuine_scape/B_34"/>
+            <task name="abc_genuine_scape/B_35"/>
+            <task name="abc_genuine_scape/B_36"/>
+            <task name="abc_genuine_scape/B_37"/>
+            <task name="abc_genuine_scape/B_38"/>
+            <task name="abc_genuine_scape/B_39"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core11"/>
+            <task name="abc_genuine_scape/B_39"/>
+            <task name="abc_genuine_scape/B_38"/>
+            <task name="abc_genuine_scape/B_37"/>
+            <task name="abc_genuine_scape/B_36"/>
+            <task name="abc_genuine_scape/B_35"/>
+            <task name="abc_genuine_scape/B_34"/>
+            <task name="abc_genuine_scape/B_33"/>
+            <task name="abc_genuine_scape/B_32"/>
+            <task name="abc_genuine_scape/B_31"/>
+            <task name="abc_genuine_scape/B_30"/>
+            <task name="abc_genuine_scape/B_29"/>
+            <task name="abc_genuine_scape/B_28"/>
+            <task name="abc_genuine_scape/B_27"/>
+            <task name="abc_genuine_scape/B_26"/>
+            <task name="abc_genuine_scape/B_25"/>
+            <task name="abc_genuine_scape/B_24"/>
+            <task name="abc_genuine_scape/B_23"/>
+            <task name="abc_genuine_scape/B_22"/>
+            <task name="abc_genuine_scape/B_21"/>
+            <task name="abc_genuine_scape/B_20"/>
+            <task name="abc_genuine_scape/B_19"/>
+            <task name="abc_genuine_scape/B_18"/>
+            <task name="abc_genuine_scape/B_17"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core12"/>
+            <task name="abc_genuine_scape/B_17"/>
+            <task name="abc_genuine_scape/B_18"/>
+            <task name="abc_genuine_scape/B_19"/>
+            <task name="abc_genuine_scape/B_20"/>
+            <task name="abc_genuine_scape/B_21"/>
+            <task name="abc_genuine_scape/B_22"/>
+            <task name="abc_genuine_scape/B_23"/>
+            <task name="abc_genuine_scape/B_24"/>
+            <task name="abc_genuine_scape/B_25"/>
+            <task name="abc_genuine_scape/B_26"/>
+            <task name="abc_genuine_scape/B_27"/>
+            <task name="abc_genuine_scape/B_28"/>
+            <task name="abc_genuine_scape/B_29"/>
+            <task name="abc_genuine_scape/B_30"/>
+            <task name="abc_genuine_scape/B_31"/>
+            <task name="abc_genuine_scape/B_32"/>
+            <task name="abc_genuine_scape/B_33"/>
+            <task name="abc_genuine_scape/B_34"/>
+            <task name="abc_genuine_scape/B_35"/>
+            <task name="abc_genuine_scape/B_36"/>
+            <task name="abc_genuine_scape/B_37"/>
+            <task name="abc_genuine_scape/B_38"/>
+            <task name="abc_genuine_scape/B_39"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core13"/>
+            <task name="abc_genuine_scape/B_39"/>
+            <task name="abc_genuine_scape/B_38"/>
+            <task name="abc_genuine_scape/B_37"/>
+            <task name="abc_genuine_scape/B_36"/>
+            <task name="abc_genuine_scape/B_35"/>
+            <task name="abc_genuine_scape/B_34"/>
+            <task name="abc_genuine_scape/B_33"/>
+            <task name="abc_genuine_scape/B_32"/>
+            <task name="abc_genuine_scape/B_31"/>
+            <task name="abc_genuine_scape/B_30"/>
+            <task name="abc_genuine_scape/B_29"/>
+            <task name="abc_genuine_scape/B_27"/>
+            <task name="abc_genuine_scape/B_28"/>
+            <task name="abc_genuine_scape/B_26"/>
+            <task name="abc_genuine_scape/B_25"/>
+            <task name="abc_genuine_scape/B_24"/>
+            <task name="abc_genuine_scape/B_22"/>
+            <task name="abc_genuine_scape/B_23"/>
+            <task name="abc_genuine_scape/B_21"/>
+            <task name="abc_genuine_scape/B_20"/>
+            <task name="abc_genuine_scape/B_19"/>
+            <task name="abc_genuine_scape/B_18"/>
+            <task name="abc_genuine_scape/B_17"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core14"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core15"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core16"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core17"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core18"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core19"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core20"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core21"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core22"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core23"/>
+            <task name="abc_genuine_scape/get"/>
+            <task name="abc_genuine_scape/OB_0"/>
+            <task name="abc_genuine_scape/OB_1"/>
+            <task name="abc_genuine_scape/OB_2"/>
+            <task name="abc_genuine_scape/OB_3"/>
+            <task name="abc_genuine_scape/OB_4"/>
+            <task name="abc_genuine_scape/OB_5"/>
+            <task name="abc_genuine_scape/OB_6"/>
+            <task name="abc_genuine_scape/OB_7"/>
+            <task name="abc_genuine_scape/OB_8"/>
+            <task name="abc_genuine_scape/OB_9"/>
+            <task name="abc_genuine_scape/OC"/>
+        </constraintGroup>
+    </constraints>
+    <timings excelUrl="">
+        <memcpyspeed opname="x86" setuptime="1" timeperunit="0.001"/>
+    </timings>
+    <simuParams>
+        <mainCore>Core0</mainCore>
+        <mainComNode>shared_mem</mainComNode>
+        <averageDataSize>1000</averageDataSize>
+        <dataTypes>
+            <dataType name="uchar" size="8"/>
+            <dataType name="void" size="1"/>
+        </dataTypes>
+        <specialVertexOperators>
+            <specialVertexOperator path="Core0"/>
+            <specialVertexOperator path="Core1"/>
+            <specialVertexOperator path="Core2"/>
+            <specialVertexOperator path="Core3"/>
+            <specialVertexOperator path="Core4"/>
+            <specialVertexOperator path="Core5"/>
+            <specialVertexOperator path="Core6"/>
+            <specialVertexOperator path="Core7"/>
+            <specialVertexOperator path="Core8"/>
+            <specialVertexOperator path="Core9"/>
+            <specialVertexOperator path="Core10"/>
+            <specialVertexOperator path="Core11"/>
+            <specialVertexOperator path="Core12"/>
+            <specialVertexOperator path="Core13"/>
+            <specialVertexOperator path="Core14"/>
+            <specialVertexOperator path="Core15"/>
+            <specialVertexOperator path="Core16"/>
+            <specialVertexOperator path="Core17"/>
+            <specialVertexOperator path="Core18"/>
+            <specialVertexOperator path="Core19"/>
+            <specialVertexOperator path="Core20"/>
+            <specialVertexOperator path="Core21"/>
+            <specialVertexOperator path="Core22"/>
+            <specialVertexOperator path="Core23"/>
+        </specialVertexOperators>
+    </simuParams>
+    <parameterValues/>
+    <papifyConfigs xmlUrl=""/>
+    <energyConfigs xmlUrl="">
+        <performanceObjective objectiveEPS="0.0"/>
+        <peActorsEnergy/>
+    </energyConfigs>
+</scenario>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <flags>
+        <sizesAreInBit/>
+    </flags>
+    <files>
+        <algorithm url="/org.ietr.preesm.dummy.abc/Algo/ABC/top/abc_top.pi"/>
+        <architecture url="/org.ietr.preesm.dummy.abc/Archi/3Nodes.slam"/>
+        <codegenDirectory url="/org.ietr.preesm.dummy.abc/Code/generated"/>
+    </files>
+    <constraints excelUrl="">
+        <constraintGroup>
+            <operator name="Node0"/>
+            <task name="abc_top/sub0"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Node1"/>
+            <task name="abc_top/sub1"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="node2"/>
+            <task name="abc_top/sub2"/>
+        </constraintGroup>
+    </constraints>
+    <timings excelUrl="">
+        <memcpyspeed opname="x86" setuptime="1" timeperunit="0.001"/>
+    </timings>
+    <simuParams>
+        <mainCore>Node0</mainCore>
+        <mainComNode>bus0</mainComNode>
+        <averageDataSize>1000</averageDataSize>
+        <dataTypes>
+            <dataType name="uchar" size="8"/>
+        </dataTypes>
+        <specialVertexOperators>
+            <specialVertexOperator path="Node0"/>
+            <specialVertexOperator path="Node1"/>
+            <specialVertexOperator path="node2"/>
+        </specialVertexOperators>
+    </simuParams>
+    <parameterValues/>
+    <papifyConfigs xmlUrl=""/>
+    <energyConfigs xmlUrl="">
+        <performanceObjective objectiveEPS="0.0"/>
+        <peActorsEnergy/>
+    </energyConfigs>
+</scenario>

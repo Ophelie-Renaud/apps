@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+   <vertices>
+      <vertex id="distributed_mem" x="250" y="199"/>
+      <vertex id="Node0" x="94" y="133"/>
+      <vertex id="Node1" x="109" y="360"/>
+      <vertex id="Node2" x="143" y="487"/>
+   </vertices>
+</layout>

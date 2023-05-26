@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <flags>
+        <sizesAreInBit/>
+    </flags>
+    <files>
+        <algorithm url="/org.ietr.preesm.dummy.abc/Algo/ABC/genuine/abc_genuine.pi"/>
+        <architecture url="/org.ietr.preesm.dummy.abc/Archi/1CoresX86.slam"/>
+        <codegenDirectory url="/org.ietr.preesm.dummy.abc/Code/generated"/>
+    </files>
+    <constraints excelUrl="">
+        <constraintGroup>
+            <operator name="Core0"/>
+            <task name="abc_genuine/A"/>
+            <task name="abc_genuine/B"/>
+            <task name="abc_genuine/C"/>
+            <task name="abc_genuine/set"/>
+            <task name="abc_genuine/get"/>
+            <task name="abc_genuine"/>
+        </constraintGroup>
+    </constraints>
+    <timings excelUrl="">
+        <memcpyspeed opname="x86" setuptime="1" timeperunit="0.001"/>
+    </timings>
+    <simuParams>
+        <mainCore>Core0</mainCore>
+        <mainComNode>shared_mem</mainComNode>
+        <averageDataSize>1000</averageDataSize>
+        <dataTypes>
+            <dataType name="uchar" size="8"/>
+        </dataTypes>
+        <specialVertexOperators>
+            <specialVertexOperator path="Core0"/>
+        </specialVertexOperators>
+    </simuParams>
+    <parameterValues/>
+    <papifyConfigs xmlUrl=""/>
+    <energyConfigs xmlUrl="">
+        <performanceObjective objectiveEPS="0.0"/>
+        <peActorsEnergy/>
+    </energyConfigs>
+</scenario>

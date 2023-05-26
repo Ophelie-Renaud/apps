@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+   <vertices>
+      <vertex id="scenario" x="63" y="275"/>
+      <vertex id="Graph Exporter" x="390" y="174"/>
+      <vertex id="SCAPE" x="219" y="260"/>
+      <vertex id="PiMM2SrDAG" x="387" y="284"/>
+      <vertex id="PiSDF Scheduling" x="554" y="265"/>
+      <vertex id="Display Gantt" x="712" y="197"/>
+      <vertex id="Gantt Exporter" x="703" y="333"/>
+   </vertices>
+</layout>

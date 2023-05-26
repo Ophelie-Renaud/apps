@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.4">
+    <spirit:vendor/>
+    <spirit:library/>
+    <spirit:name>shared</spirit:name>
+    <spirit:version/>
+    <spirit:componentInstances>
+        <spirit:componentInstance>
+            <spirit:instanceName>CPU0</spirit:instanceName>
+            <spirit:hardwareId>0</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="x86" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>CPU2</spirit:instanceName>
+            <spirit:hardwareId>2</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="x86" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>CPU1</spirit:instanceName>
+            <spirit:hardwareId>1</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="x86" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>CPU3</spirit:instanceName>
+            <spirit:hardwareId>3</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="x86" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>bus0</spirit:instanceName>
+            <spirit:hardwareId>0</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="defaultcontentionComNode"
+                spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>mem0</spirit:instanceName>
+            <spirit:hardwareId>0</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="defaultMem" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>bus1</spirit:instanceName>
+            <spirit:hardwareId>1</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="defaultcontentionComNode"
+                spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>bus2</spirit:instanceName>
+            <spirit:hardwareId>2</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="defaultcontentionComNode"
+                spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>mem1</spirit:instanceName>
+            <spirit:hardwareId>1</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="defaultMem" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>mem2</spirit:instanceName>
+            <spirit:hardwareId>2</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="defaultMem" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:interconnections>
+        <spirit:interconnection>
+            <spirit:name>CPU0|bus0|bus0|bus0</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus0" spirit:componentRef="CPU0"/>
+            <spirit:activeInterface spirit:busRef="bus0" spirit:componentRef="bus0"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>bus0|mem|mem0|mem</spirit:name>
+            <spirit:activeInterface spirit:busRef="mem" spirit:componentRef="bus0"/>
+            <spirit:activeInterface spirit:busRef="mem" spirit:componentRef="mem0"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>bus1|mem|mem1|mem</spirit:name>
+            <spirit:activeInterface spirit:busRef="mem" spirit:componentRef="bus1"/>
+            <spirit:activeInterface spirit:busRef="mem" spirit:componentRef="mem1"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>bus2|mem|mem2|mem</spirit:name>
+            <spirit:activeInterface spirit:busRef="mem" spirit:componentRef="bus2"/>
+            <spirit:activeInterface spirit:busRef="mem" spirit:componentRef="mem2"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>CPU3|bus1|bus1|bus1</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus1" spirit:componentRef="CPU3"/>
+            <spirit:activeInterface spirit:busRef="bus1" spirit:componentRef="bus1"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>bus0|bus2|bus2|bus2</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus2" spirit:componentRef="bus0"/>
+            <spirit:activeInterface spirit:busRef="bus2" spirit:componentRef="bus2"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>bus1|bus2|bus2|bus2</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus2" spirit:componentRef="bus1"/>
+            <spirit:activeInterface spirit:busRef="bus2" spirit:componentRef="bus2"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>CPU2|bus1|bus1|bus1</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus1" spirit:componentRef="CPU2"/>
+            <spirit:activeInterface spirit:busRef="bus1" spirit:componentRef="bus1"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>CPU1|bus0|bus0|bus0</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus0" spirit:componentRef="CPU1"/>
+            <spirit:activeInterface spirit:busRef="bus0" spirit:componentRef="bus0"/>
+        </spirit:interconnection>
+    </spirit:interconnections>
+    <spirit:hierConnections/>
+    <spirit:vendorExtensions>
+        <slam:componentDescriptions xmlns:slam="http://sourceforge.net/projects/dftools/slam">
+            <slam:componentDescription slam:componentRef="x86"
+                slam:componentType="CPU" slam:refinement=""/>
+            <slam:componentDescription
+                slam:componentRef="defaultcontentionComNode"
+                slam:componentType="contentionComNode"
+                slam:refinement="" slam:speed="5000000"/>
+            <slam:componentDescription
+                slam:componentRef="defaultMem"
+                slam:componentType="Mem" slam:refinement="" slam:size="546666"/>
+        </slam:componentDescriptions>
+        <slam:linkDescriptions xmlns:slam="http://sourceforge.net/projects/dftools/slam">
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="CPU0|bus0|bus0|bus0"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="bus0|mem|mem0|mem"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="bus1|mem|mem1|mem"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="bus2|mem|mem2|mem"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="CPU3|bus1|bus1|bus1"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="bus0|bus2|bus2|bus2"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="bus1|bus2|bus2|bus2"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="CPU2|bus1|bus1|bus1"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="CPU1|bus0|bus0|bus0"/>
+        </slam:linkDescriptions>
+        <slam:designDescription xmlns:slam="http://sourceforge.net/projects/dftools/slam">
+            <slam:parameters/>
+        </slam:designDescription>
+    </spirit:vendorExtensions>
+</spirit:design>
