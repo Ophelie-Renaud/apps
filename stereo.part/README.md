@@ -70,3 +70,7 @@ In the case that data transfer cost is negligible compare to parallelism gainst 
 ### Simulation
 
 $add \ SimGrid \ part$
+
+### Main code generation
+![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/main_codegen.png)
+
