@@ -49,6 +49,11 @@ You can generate the partitioned graphs following these steps:
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/node_partitioner.png)
 The partitioner produces subgraphs within the Algo folder and a topgraph with actors defined by a newly generated code. Each subgraph code includes node-specific initialization, synchronization, and thread launch details. Each core is assigned a thread.
 
+'A fixed number of thread is define an is equal to the number of Cores per nodes.
+Fore each node a main Core is define.
+Ecah thread is associated to a define function whose prototype is declare in these files.
+extern output input of each subgraph are declared pointer.
+The subgraphs definition create thread and launch them. '
 ### Thread Partitioning
 
 You can simulate the intranode resource allocation and observe the generated gantt for each subgraphs
@@ -59,6 +64,7 @@ You can simulate the intranode resource allocation and observe the generated gan
 
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/thread_partitioner.png)
 
+### Final thread code generation
 In the case that data transfer cost is negligible compare to parallelism gainst and the the partition is already balanced the you can generate sub-thread code. 
 
     1. open scape_codegen.workflow file
@@ -72,5 +78,7 @@ In the case that data transfer cost is negligible compare to parallelism gainst 
 $add \ SimGrid \ part$
 
 ### Main code generation
+
+
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/main_codegen.png)
 
