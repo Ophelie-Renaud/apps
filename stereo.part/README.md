@@ -47,6 +47,7 @@ You can generate the partitioned graphs following these steps:
     
 .. or take advantage of the provided graphs (Algo/part/..).
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/node_partitioner.png)
+The partitioner produces subgraphs within the Algo folder and a topgraph with actors defined by a newly generated code. Each subgraph code includes node-specific initialization, synchronization, and thread launch details. Each core is assigned a thread.
 
 ### Thread Partitioning
 
@@ -57,6 +58,14 @@ You can simulate the intranode resource allocation and observe the generated gan
     3. Select subi.scenario
 
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/thread_partitioner.png)
+
+In the case that data transfer cost is negligible compare to parallelism gainst and the the partition is already balanced the you can generate sub-thread code. 
+
+    1. open scape_codegen.workflow file
+    2. rightclick on the workflow “Run workflow > ..”
+    3. Select subi.scenario
+
+![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/thread_partitioner_code.png)
 
 ### Simulation
 
