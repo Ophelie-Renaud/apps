@@ -49,13 +49,13 @@ You can generate the partitioned graphs following these steps:
 ![](https://github.com/Ophelie-Renaud/apps/blob/main/stereo.part/Pic/node_partitioner.png)
 The partitioner produces subgraphs within the Algo folder and a topgraph with actors defined by a newly generated code. Each subgraph code includes node-specific initialization, synchronization, and thread launch details. Each core is assigned a thread.
 
-:sunglasses:
+
 
 	A fixed number of thread is define an is equal to the number of Cores per nodes.
-	 Fore each node a main Core is define.
-	 Each thread is associated to a define function whose prototype is declare in these files.
-	extern output input of each subgraph are declared pointer.
-	The subgraphs definition create thread and launch them. 
+	Fore each node a main Core is define.
+	Each thread is associated to a define function whose prototype is declare in these files.
+	Extern output input of each subgraph are declared pointer.
+	The subgraphs definition create thread and launch them. :sunglasses:
 
 
 ### Thread Partitioning
