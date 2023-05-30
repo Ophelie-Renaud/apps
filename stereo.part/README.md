@@ -55,7 +55,8 @@ The partitioner produces subgraphs within the Algo folder and a topgraph with ac
 	Fore each node a main Core is define.
 	Each thread is associated to a define function whose prototype is declare in these files.
 	Extern output input of each subgraph are declared pointer.
-	The subgraphs definition create thread and launch them. :sunglasses:
+	The subgraphs definition create thread and launch them. 
+	:sunglasses:
 
 
 ### Thread Partitioning
