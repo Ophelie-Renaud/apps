@@ -76,7 +76,7 @@ char *const FIFO_Head_OB_5_end_back__OB_6_init_feed__0 = (char*) (Shared_2 + 73)
 char *const FIFO_Head_OB_6_end_back__OB_7_init_feed__0 = (char*) (Shared_2 + 45); // FIFO_Head_OB_6_end_back > OB_7_init_feed size:= 1*char
 char *const FIFO_Head_OB_7_end_back__OB_8_init_feed__0 = (char*) (Shared_2 + 119); // FIFO_Head_OB_7_end_back > OB_8_init_feed size:= 1*char
 char *const FIFO_Head_OB_8_end_back__OB_9_init_feed__0 = (char*) (Shared_2 + 120); // FIFO_Head_OB_8_end_back > OB_9_init_feed size:= 1*char
-uchar *const out__in__0 = (uchar*) (Shared_2 + 0);  // srcA_0_out > frk_0_in size:= 43*uchar
+uchar *const out__in__02 = (uchar*) (Shared_2 + 0);  // srcA_0_out > frk_0_in size:= 43*uchar
 uchar *const newPort_0__inB__0 = (uchar*) (Shared_2 + 0);  // frk_0_newPort_0 > OB_0_0_inB size:= 2*uchar
 uchar *const newPort1_1__inB__0 = (uchar*) (Shared_2 + 2);  // frk_0_newPort1_1 > OB_1_0_inB size:= 2*uchar
 uchar *const newPort2_2__inB__0 = (uchar*) (Shared_2 + 4);  // frk_0_newPort2_2 > OB_2_0_inB size:= 2*uchar
@@ -109,26 +109,26 @@ uchar *const outB__inC_1__2 = (uchar*) (Shared_2 + 103);  // OB_7_0_outB > implo
 uchar *const outB__inC_2__2 = (uchar*) (Shared_2 + 105);  // OB_8_0_outB > implode_OC_2_inC_inC_2 size:= 2*uchar
 uchar *const outB__inC__3 = (uchar*) (Shared_2 + 107);  // implode_OC_3_inC_outB > OC_3_inC size:= 6*uchar
 uchar *const outB__inC_0__3 = (uchar*) (Shared_2 + 8);  // OB_9_0_outB > implode_OC_3_inC_inC_0 size:= 2*uchar
-uchar *const feed__feed__0 = (uchar*) (Shared_2 + 101);  // OB_1_init_feed_feed > OB_1_0_feed size:= 1*uchar
-uchar *const feed__feed__1 = (uchar*) (Shared_2 + 103);  // OB_2_init_feed_feed > OB_2_0_feed size:= 1*uchar
-uchar *const feed__feed__2 = (uchar*) (Shared_2 + 105);  // OB_3_init_feed_feed > OB_3_0_feed size:= 1*uchar
-uchar *const feed__feed__3 = (uchar*) (Shared_2 + 107);  // OB_4_init_feed_feed > OB_4_0_feed size:= 1*uchar
-uchar *const feed__feed__4 = (uchar*) (Shared_2 + 113);  // OB_5_init_feed_feed > OB_5_0_feed size:= 1*uchar
-uchar *const feed__feed__5 = (uchar*) (Shared_2 + 108);  // OB_6_init_feed_feed > OB_6_0_feed size:= 1*uchar
-uchar *const feed__feed__6 = (uchar*) (Shared_2 + 114);  // OB_7_init_feed_feed > OB_7_0_feed size:= 1*uchar
-uchar *const feed__feed__7 = (uchar*) (Shared_2 + 115);  // OB_8_init_feed_feed > OB_8_0_feed size:= 1*uchar
-uchar *const feed__feed__8 = (uchar*) (Shared_2 + 109);  // OB_9_init_feed_feed > OB_9_0_feed size:= 1*uchar
-uchar *const out__feed__0 = (uchar*) (Shared_2 + 116);  // srcD_0_out > OB_0_0_feed size:= 1*uchar
-uchar *const back__back__0 = (uchar*) (Shared_2 + 38);  // OB_0_0_back > OB_0_end_back_back size:= 1*uchar
-uchar *const back__back__1 = (uchar*) (Shared_2 + 39);  // OB_1_0_back > OB_1_end_back_back size:= 1*uchar
-uchar *const back__back__2 = (uchar*) (Shared_2 + 40);  // OB_2_0_back > OB_2_end_back_back size:= 1*uchar
-uchar *const back__back__3 = (uchar*) (Shared_2 + 41);  // OB_3_0_back > OB_3_end_back_back size:= 1*uchar
-uchar *const back__back__4 = (uchar*) (Shared_2 + 42);  // OB_4_0_back > OB_4_end_back_back size:= 1*uchar
-uchar *const back__back__5 = (uchar*) (Shared_2 + 43);  // OB_5_0_back > OB_5_end_back_back size:= 1*uchar
-uchar *const back__back__6 = (uchar*) (Shared_2 + 2);  // OB_6_0_back > OB_6_end_back_back size:= 1*uchar
-uchar *const back__back__7 = (uchar*) (Shared_2 + 4);  // OB_7_0_back > OB_7_end_back_back size:= 1*uchar
-uchar *const back__back__8 = (uchar*) (Shared_2 + 6);  // OB_8_0_back > OB_8_end_back_back size:= 1*uchar
-uchar *const back__in__0 = (uchar*) (Shared_2 + 117);  // OB_9_0_back > get_0_in size:= 1*uchar
+uchar *const feed__feed2__0 = (uchar*) (Shared_2 + 101);  // OB_1_init_feed_feed > OB_1_0_feed size:= 1*uchar
+uchar *const feed__feed2__1 = (uchar*) (Shared_2 + 103);  // OB_2_init_feed_feed > OB_2_0_feed size:= 1*uchar
+uchar *const feed__feed2__2 = (uchar*) (Shared_2 + 105);  // OB_3_init_feed_feed > OB_3_0_feed size:= 1*uchar
+uchar *const feed__feed2__3 = (uchar*) (Shared_2 + 107);  // OB_4_init_feed_feed > OB_4_0_feed size:= 1*uchar
+uchar *const feed__feed2__4 = (uchar*) (Shared_2 + 113);  // OB_5_init_feed_feed > OB_5_0_feed size:= 1*uchar
+uchar *const feed__feed2__5 = (uchar*) (Shared_2 + 108);  // OB_6_init_feed_feed > OB_6_0_feed size:= 1*uchar
+uchar *const feed__feed2__6 = (uchar*) (Shared_2 + 114);  // OB_7_init_feed_feed > OB_7_0_feed size:= 1*uchar
+uchar *const feed__feed2__7 = (uchar*) (Shared_2 + 115);  // OB_8_init_feed_feed > OB_8_0_feed size:= 1*uchar
+uchar *const feed__feed2__8 = (uchar*) (Shared_2 + 109);  // OB_9_init_feed_feed > OB_9_0_feed size:= 1*uchar
+uchar *const out__feed__02 = (uchar*) (Shared_2 + 116);  // srcD_0_out > OB_0_0_feed size:= 1*uchar
+uchar *const back__back2__0 = (uchar*) (Shared_2 + 38);  // OB_0_0_back > OB_0_end_back_back size:= 1*uchar
+uchar *const back__back2__1 = (uchar*) (Shared_2 + 39);  // OB_1_0_back > OB_1_end_back_back size:= 1*uchar
+uchar *const back__back2__2 = (uchar*) (Shared_2 + 40);  // OB_2_0_back > OB_2_end_back_back size:= 1*uchar
+uchar *const back__back2__3 = (uchar*) (Shared_2 + 41);  // OB_3_0_back > OB_3_end_back_back size:= 1*uchar
+uchar *const back__back2__4 = (uchar*) (Shared_2 + 42);  // OB_4_0_back > OB_4_end_back_back size:= 1*uchar
+uchar *const back__back2__5 = (uchar*) (Shared_2 + 43);  // OB_5_0_back > OB_5_end_back_back size:= 1*uchar
+uchar *const back__back2__6 = (uchar*) (Shared_2 + 2);  // OB_6_0_back > OB_6_end_back_back size:= 1*uchar
+uchar *const back__back2__7 = (uchar*) (Shared_2 + 4);  // OB_7_0_back > OB_7_end_back_back size:= 1*uchar
+uchar *const back__back2__8 = (uchar*) (Shared_2 + 6);  // OB_8_0_back > OB_8_end_back_back size:= 1*uchar
+uchar *const back__in__02 = (uchar*) (Shared_2 + 117);  // OB_9_0_back > get_0_in size:= 1*uchar
 char *const out_0__inC_1__0 = (char*) (Shared_2 + 0); // explode_src_B0_0_out_out_0 > implode_OC_3_inC_inC_1 size:= 4*char
 char *const out_3__inC_0__0 = (char*) (Shared_2 + 0); // explode_src_B0_0_out_out_3 > implode_OC_6_inC_inC_0 size:= 1*char
 char *const out_0__inC_1__1 = (char*) (Shared_2 + 0); // explode_src_B1_0_out_out_0 > implode_OC_6_inC_inC_1 size:= 5*char
@@ -147,10 +147,10 @@ if(initNode2){
 
 }
 // loop body
-    fifoPop(feed__feed__0, FIFO_Head_OB_0_end_back__OB_1_init_feed__0, 1, NULL, 0); // 1 * char
+    fifoPop(feed__feed2__0, FIFO_Head_OB_0_end_back__OB_1_init_feed__0, 1, NULL, 0); // 1 * char
     sendStart(0, 1); // Core0 > Core1
     sendEnd(); // Core0 > Core1
-    //src(out__in__0); // srcA_0
+    //src(out__in__02); // srcA_0
 
     // Fork frk_0
 
@@ -176,7 +176,7 @@ if(initNode2){
     sendEnd(); // Core0 > Core4
     receiveStart(); // Core1 > Core0
     receiveEnd(1, 0); // Core1 > Core0
-    B(newPort_0__inB__0, out__feed__0, outB__inC_0__0, back__back__0); // OB_0_0
+    OB(outA1+0, outD1, outB__inC_0__0, back__back2__0); // OB_0_0
 
     receiveStart(); // Core5 > Core0
     receiveEnd(5, 0); // Core5 > Core0
@@ -185,7 +185,7 @@ if(initNode2){
     PREESM_MD5_Update(&preesm_md5_ctx_out_1__inC__1,(char *)out_1__inC__1, 6);
 #endif
 
-    fifoPush(back__back__0, FIFO_Head_OB_0_end_back__OB_1_init_feed__0, 1, NULL, 0); // 1 * char
+    fifoPush(back__back2__0, FIFO_Head_OB_0_end_back__OB_1_init_feed__0, 1, NULL, 0); // 1 * char
     receiveStart(); // Core1 > Core0
     receiveEnd(1, 0); // Core1 > Core0
     receiveStart(); // Core2 > Core0

@@ -43,6 +43,7 @@
             <port annotation="NONE" expr="1" kind="output" name="newPort14"/>
             <port annotation="NONE" expr="1" kind="output" name="newPort15"/>
             <port annotation="NONE" expr="1" kind="output" name="newPort16"/>
+            <port annotation="NONE" expr="43" kind="output" name="newPort17"/>
         </node>
         <node id="B_0" kind="actor">
             <data key="graph_desc">Code/include/code.h</data>
@@ -350,6 +351,13 @@
             </loop>
             <port annotation="NONE" expr="1" kind="input" name="in"/>
         </node>
+        <node id="snk3" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="get">
+                <param direction="IN" isConfig="false" name="in" type="uchar "/>
+            </loop>
+            <port annotation="NONE" expr="43" kind="input" name="in"/>
+        </node>
         <node expr="60" getter="" id="A_outA__frk_in"
             kind="delay" level="permanent" setter="">
             <port annotation="NONE" expr="60" kind="input" name="set"/>
@@ -577,5 +585,7 @@
             target="snk" targetport="in" type="uchar"/>
         <edge kind="fifo" source="B_16" sourceport="back"
             target="snk2" targetport="in" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort17"
+            target="snk3" targetport="in" type="uchar"/>
     </graph>
 </graphml>

@@ -42,7 +42,7 @@
             </loop>
             <port annotation="NONE" expr="2" kind="input" name="inB"/>
             <port annotation="NONE" expr="1" kind="input" name="feed"/>
-            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="20" kind="output" name="back"/>
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_1" kind="actor">
@@ -57,7 +57,7 @@
                     name="back" type="uchar"/>
             </loop>
             <port annotation="NONE" expr="2" kind="input" name="inB"/>
-            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="20" kind="input" name="feed"/>
             <port annotation="NONE" expr="1" kind="output" name="back"/>
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>

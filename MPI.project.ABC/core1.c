@@ -143,6 +143,7 @@ void* computationThread_Core1(uchar *outA0, uchar *outB0, uchar *outD0) {
         memcpy(newPort14_14__inB__0 + 0, in__in__0 + 14, 1 * sizeof(uchar));
         memcpy(newPort15_15__inB__0 + 0, in__in__0 + 15, 1 * sizeof(uchar));
         memcpy(newPort16_16__inB__0 + 0, in__in__0 + 16, 1 * sizeof(uchar));
+        memcpy(outA0 + 0, in__in__0 + 17, 43 * sizeof(uchar));
     }
     sendStart(1, 0); // Core1 > Core0
     sendEnd(); // Core1 > Core0
@@ -230,23 +231,23 @@ void* computationThread_Core1(uchar *outA0, uchar *outB0, uchar *outD0) {
     // Join jn_0
 
     {
-        memcpy(out__in__0 + 0, outB__newPort0_00__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 1, outB__newPort1_01__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 2, outB__newPort2_02__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 3, outB__newPort3_03__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 4, outB__newPort4_04__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 5, outB__newPort5_05__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 6, outB__newPort6_06__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 7, outB__newPort7_07__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 8, outB__newPort8_08__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 9, outB__newPort9_09__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 10, outB__newPort10_10__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 11, outB__newPort11_11__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 12, outB__newPort12_12__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 13, outB__newPort13_13__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 14, outB__newPort14_14__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 15, outB__newPort15_15__0 + 0, 1 * sizeof(uchar));
-        memcpy(out__in__0 + 16, outB__newPort16_16__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 0, outB__newPort0_00__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 1, outB__newPort1_01__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 2, outB__newPort2_02__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 3, outB__newPort3_03__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 4, outB__newPort4_04__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 5, outB__newPort5_05__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 6, outB__newPort6_06__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 7, outB__newPort7_07__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 8, outB__newPort8_08__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 9, outB__newPort9_09__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 10, outB__newPort10_10__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 11, outB__newPort11_11__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 12, outB__newPort12_12__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 13, outB__newPort13_13__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 14, outB__newPort14_14__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 15, outB__newPort15_15__0 + 0, 1 * sizeof(uchar));
+        memcpy(outB0 + 16, outB__newPort16_16__0 + 0, 1 * sizeof(uchar));
     }
     sendStart(1, 0); // Core1 > Core0
     sendEnd(); // Core1 > Core0

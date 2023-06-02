@@ -10,29 +10,64 @@ extern struct rk_sema preesmPrintSema;
 #endif
 extern char Shared_2[121]; //  size:= 121*char
 extern char *const FIFO_Head_OB_3_end_back__OB_4_init_feed__0; // FIFO_Head_OB_3_end_back > OB_4_init_feed size:= 1*char defined in Core0
-extern uchar *const feed__feed__3;  // OB_4_init_feed_feed > OB_4_0_feed size:= 1*uchar defined in Core0
+
 extern char *const FIFO_Head_OB_7_end_back__OB_8_init_feed__0; // FIFO_Head_OB_7_end_back > OB_8_init_feed size:= 1*char defined in Core0
-extern uchar *const feed__feed__7;  // OB_8_init_feed_feed > OB_8_0_feed size:= 1*uchar defined in Core0
-extern char *const OB_8_init_feed__OB_8_0__0;  // OB_8_init_feed > OB_8_0 size:= 1*char defined in Core0
-extern char *const frk_0__OB_4_0__0;  // frk_0 > OB_4_0 size:= 2*char defined in Core0
-extern uchar *const newPort4_4__inB__0;  // frk_0_newPort4_4 > OB_4_0_inB size:= 2*uchar defined in Core0
-extern uchar *const outB__inC_1__1;  // OB_4_0_outB > implode_OC_1_inC_inC_1 size:= 2*uchar defined in Core0
-extern uchar *const back__back__4;  // OB_4_0_back > OB_4_end_back_back size:= 1*uchar defined in Core0
-extern char *const OB_4_0__OB_4_end_back__0;  // OB_4_0 > OB_4_end_back size:= 1*char defined in Core0
-extern char *const OB_4_0__implode_OC_1_inC__0;  // OB_4_0 > implode_OC_1_inC size:= 2*char defined in Core0
-extern char *const OB_9_init_feed__OB_9_0__0;  // OB_9_init_feed > OB_9_0 size:= 1*char defined in Core0
-extern char *const frk_0__OB_9_0__0;  // frk_0 > OB_9_0 size:= 2*char defined in Core0
-extern uchar *const newPort9_9__inB__0;  // frk_0_newPort9_9 > OB_9_0_inB size:= 2*uchar defined in Core0
-extern uchar *const feed__feed__8;  // OB_9_init_feed_feed > OB_9_0_feed size:= 1*uchar defined in Core0
-extern uchar *const outB__inC_0__3;  // OB_9_0_outB > implode_OC_3_inC_inC_0 size:= 2*uchar defined in Core0
-extern uchar *const back__in__0;  // OB_9_0_back > get_0_in size:= 1*uchar defined in Core0
-extern char *const OB_9_0__implode_OC_3_inC__0;  // OB_9_0 > implode_OC_3_inC size:= 2*char defined in Core0
-extern char *const explode_src_B0_0_out__OC_5__0;  // explode_src_B0_0_out > OC_5 size:= 6*char defined in Core0
-extern uchar *const out_2__inC__0;  // explode_src_B0_0_out_out_2 > OC_5_inC size:= 6*uchar defined in Core0
-extern char *const OB_3_0__OB_3_end_back__0;  // OB_3_0 > OB_3_end_back size:= 1*char defined in Core0
-extern uchar *const back__back__3;  // OB_3_0_back > OB_3_end_back_back size:= 1*uchar defined in Core0
-extern char *const OB_7_0__OB_7_end_back__0;  // OB_7_0 > OB_7_end_back size:= 1*char defined in Core0
-extern uchar *const back__back__7;  // OB_7_0_back > OB_7_end_back_back size:= 1*uchar defined in Core0
+extern uchar *const out__in__02 ;
+extern uchar *const newPort_0__inB__0 ;
+extern uchar *const newPort1_1__inB__0 ;
+extern uchar *const newPort2_2__inB__0 ;
+extern uchar *const newPort3_3__inB__0 ;
+extern uchar *const newPort4_4__inB__0 ;
+extern uchar *const newPort5_5__inB__0 ;
+extern uchar *const newPort6_6__inB__0 ;
+extern uchar *const newPort7_7__inB__0;
+extern uchar *const newPort8_8__inB__0;
+extern uchar *const newPort9_9__inB__0;
+extern uchar *const out__inC__0;
+extern uchar *const out__inC__1;
+extern uchar *const out_1__inC__0;
+extern uchar *const out_2__inC__0;
+extern uchar *const out_1__inC__1;
+extern uchar *const out_2__inC__1;
+extern uchar *const out_3__inC__0;
+extern uchar *const out__inC__2 ;
+extern uchar *const outB__inC__0;
+extern uchar *const outB__inC_0__0 ;
+extern uchar *const outB__inC_1__0;
+extern uchar *const outB__inC_2__0;
+extern uchar *const outB__inC__1;
+extern uchar *const outB__inC_0__1;
+extern uchar *const outB__inC_1__1;
+extern uchar *const outB__inC_2__1;
+extern uchar *const outB__inC__2 ;
+extern uchar *const outB__inC_0__2;
+extern uchar *const outB__inC_1__2;
+extern uchar *const outB__inC_2__2;
+extern uchar *const outB__inC__3;
+extern uchar *const outB__inC_0__3;
+extern uchar *const feed__feed2__0;
+extern uchar *const feed__feed2__1;
+extern uchar *const feed__feed2__2;
+extern uchar *const feed__feed2__3;
+extern uchar *const feed__feed2__4;
+extern uchar *const feed__feed2__5;
+extern uchar *const feed__feed2__6;
+extern uchar *const feed__feed2__7;
+extern uchar *const feed__feed2__8;
+extern uchar *const out__feed__02;
+extern uchar *const back__back2__0;
+extern uchar *const back__back2__1;
+extern uchar *const back__back2__2;
+extern uchar *const back__back2__3;
+extern uchar *const back__back2__4;
+extern uchar *const back__back2__5;
+extern uchar *const back__back2__6;
+extern uchar *const back__back2__7;
+extern uchar *const back__back2__8;
+extern uchar *const back__in__02;
+extern char *const out_0__inC_1__0;
+extern char *const out_3__inC_0__0;
+extern char *const out_0__inC_1__1;
 void* computationThread_Core14(uchar *outA1, uchar *outB0, uchar *outB1, uchar *outD1) {
 #ifdef PREESM_MD5_UPDATE
     PREESM_MD5_CTX preesm_md5_ctx_out_2__inC__0;
@@ -47,13 +82,13 @@ if(initNode2){
     fifoInit(FIFO_Head_OB_7_end_back__OB_8_init_feed__0, 1, NULL, 0); // 1 * char
 }
 // loop body
-    fifoPop(feed__feed__3, FIFO_Head_OB_3_end_back__OB_4_init_feed__0, 1, NULL, 0); // 1 * char
-    fifoPop(feed__feed__7, FIFO_Head_OB_7_end_back__OB_8_init_feed__0, 1, NULL, 0); // 1 * char
+    fifoPop(feed__feed2__3, FIFO_Head_OB_3_end_back__OB_4_init_feed__0, 1, NULL, 0); // 1 * char
+    fifoPop(feed__feed2__7, FIFO_Head_OB_7_end_back__OB_8_init_feed__0, 1, NULL, 0); // 1 * char
     sendStart(4, 3); // Core4 > Core3
     sendEnd(); // Core4 > Core3
     receiveStart(); // Core0 > Core4
     receiveEnd(0, 4); // Core0 > Core4
-    B(newPort4_4__inB__0, feed__feed__3, outB__inC_1__1, back__back__4); // OB_4_0
+    OB(outA1+8, feed__feed2__3, outB__inC_1__1, back__back2__4); // OB_4_0
 
     sendStart(4, 5); // Core4 > Core5
     sendEnd(); // Core4 > Core5
@@ -63,7 +98,7 @@ if(initNode2){
     receiveEnd(5, 4); // Core5 > Core4
     receiveStart(); // Core0 > Core4
     receiveEnd(0, 4); // Core0 > Core4
-    B(newPort9_9__inB__0, feed__feed__8, outB__inC_0__3, back__in__0); // OB_9_0
+    OB(outA1+18, feed__feed2__8, outB__inC_0__3, back__in__02); // OB_9_0
 
     sendStart(4, 1); // Core4 > Core1
     sendEnd(); // Core4 > Core1
@@ -76,11 +111,11 @@ if(initNode2){
 
     receiveStart(); // Core3 > Core4
     receiveEnd(3, 4); // Core3 > Core4
-    fifoPush(back__back__3, FIFO_Head_OB_3_end_back__OB_4_init_feed__0, 1, NULL, 0); // 1 * char
+    fifoPush(back__back2__3, FIFO_Head_OB_3_end_back__OB_4_init_feed__0, 1, NULL, 0); // 1 * char
     receiveStart(); // Core2 > Core4
     receiveEnd(2, 4); // Core2 > Core4
-    fifoPush(back__back__7, FIFO_Head_OB_7_end_back__OB_8_init_feed__0, 1, NULL, 0); // 1 * char
-    get(back__in__0); // get_0
+    fifoPush(back__back2__7, FIFO_Head_OB_7_end_back__OB_8_init_feed__0, 1, NULL, 0); // 1 * char
+    get(back__in__02); // get_0
 #ifdef PREESM_MD5_UPDATE
     PREESM_MD5_Update(&preesm_md5_ctx_back__in__0,(char *)back__in__0, 1);
 #endif

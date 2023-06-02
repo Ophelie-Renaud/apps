@@ -207,3 +207,32 @@ Parsed C implicit link information from above output:
   implicit fwks: []
 
 
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/orenaud/Bureau/MPI_project_ABC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Z0v7u0
+
+Run Build Command(s):/snap/clion/237/bin/ninja/linux/x64/ninja cmTC_448ec && [1/2] Building C object CMakeFiles/cmTC_448ec.dir/src.c.o
+[2/2] Linking C executable cmTC_448ec
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+

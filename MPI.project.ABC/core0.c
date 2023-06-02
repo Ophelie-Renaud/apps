@@ -211,7 +211,7 @@ if(initNode0){
     receiveEnd(1, 0); // Core1 > Core0
     receiveStart(); // Core1 > Core0
     receiveEnd(1, 0); // Core1 > Core0
-    B(newPort16_16__inB__0, feed__feed__15, outB__newPort16_16__0, back__in__0); // B_16_0
+    B(newPort16_16__inB__0, feed__feed__15, outB__newPort16_16__0, outD0); // B_16_0
 
     sendStart(0, 1); // Core0 > Core1
     sendEnd(); // Core0 > Core1

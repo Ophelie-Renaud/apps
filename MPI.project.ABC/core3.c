@@ -133,7 +133,7 @@ void* computationThread_Core3(uchar *outA0, uchar *outB0, uchar *outD0) {
     fifoPush(back__back__9, FIFO_Head_B_6_end_back__B_7_init_feed__0, 1 * sizeof(char), NULL, 0);
     receiveStart(); // Core0 > Core3
     receiveEnd(0, 3); // Core0 > Core3
-    get(back__in__0); // snk2_0
+    //get(back__in__0); // snk2_0
 #ifdef PREESM_MD5_UPDATE
     PREESM_MD5_Update(&preesm_md5_ctx_back__in__0,(char *)back__in__0, 1);
 #endif
