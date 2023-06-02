@@ -9,7 +9,7 @@
     <graph edgedefault="directed">
         <data key="name">abc_genuine_scape</data>
         <node id="A" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="A">
                 <param direction="OUT" isConfig="false"
                     name="outA" type="uchar"/>
@@ -70,7 +70,7 @@
             <port annotation="NONE" expr="2" kind="output" name="newPort_9"/>
         </node>
         <node id="B_0" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -86,7 +86,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_1" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -102,7 +102,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_2" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -118,7 +118,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_3" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -134,7 +134,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_4" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -150,7 +150,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_5" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -166,7 +166,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_6" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -182,7 +182,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_7" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -198,7 +198,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_8" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -214,7 +214,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_9" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -230,7 +230,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_10" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -246,7 +246,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_11" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -262,7 +262,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_12" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -278,7 +278,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_13" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -294,7 +294,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_14" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -310,7 +310,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_15" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -326,7 +326,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_16" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -342,7 +342,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_17" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -358,7 +358,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_18" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -374,7 +374,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_19" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -390,7 +390,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_20" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -406,7 +406,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_21" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -422,7 +422,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_22" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -438,7 +438,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_23" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -454,7 +454,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_24" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -470,7 +470,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_25" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -486,7 +486,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_26" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -502,7 +502,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_27" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -518,7 +518,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_28" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -534,7 +534,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_29" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -550,7 +550,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_30" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -566,7 +566,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_31" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -582,7 +582,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_32" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -598,7 +598,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_33" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -614,7 +614,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_34" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -630,7 +630,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_35" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -646,7 +646,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_36" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -662,7 +662,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_37" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -678,7 +678,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_38" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -694,7 +694,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="B_39" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="B">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
@@ -710,7 +710,7 @@
             <port annotation="NONE" expr="1" kind="output" name="outB"/>
         </node>
         <node id="set" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="set">
                 <param direction="OUT" isConfig="false"
                     name="out" type="uchar"/>
@@ -718,15 +718,15 @@
             <port annotation="NONE" expr="1" kind="output" name="out"/>
         </node>
         <node id="get" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
             <loop name="get">
                 <param direction="IN" isConfig="false" name="in" type="uchar"/>
             </loop>
             <port annotation="NONE" expr="1" kind="input" name="in"/>
         </node>
         <node id="OB_0" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -741,8 +741,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_1" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -757,8 +757,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_2" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -773,8 +773,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_3" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -789,8 +789,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_4" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -805,8 +805,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_5" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -821,8 +821,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_6" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -837,8 +837,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_7" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -853,8 +853,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_8" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -869,8 +869,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OB_9" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="B">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OB">
                 <param direction="IN" isConfig="false" name="inB" type="uchar"/>
                 <param direction="IN" isConfig="false"
                     name="feed" type="uchar"/>
@@ -885,8 +885,8 @@
             <port annotation="NONE" expr="2" kind="output" name="outB"/>
         </node>
         <node id="OC" kind="actor">
-            <data key="graph_desc">Code/include/code.h</data>
-            <loop name="C">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OC">
                 <param direction="IN" isConfig="false" name="inC" type="uchar"/>
             </loop>
             <port annotation="NONE" expr="6" kind="input" name="inC"/>
@@ -1406,7 +1406,7 @@
         <edge kind="fifo" source="set" sourceport="out"
             target="B_0" targetport="feed" type="uchar"/>
         <edge kind="fifo" source="OB_9" sourceport="back"
-            target="get" targetport="in" type="void"/>
+            target="get" targetport="in" type="uchar"/>
         <edge kind="fifo" source="frk" sourceport="newPort"
             target="B_0" targetport="inB" type="uchar"/>
         <edge kind="fifo" source="frk" sourceport="newPort1"

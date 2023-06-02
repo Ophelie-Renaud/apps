@@ -98,8 +98,8 @@ extern "C" {
 
 #include "code.h"
 
-#define NB_DESIGN_ELTS 4
-#define NB_CORES 3
+#define NB_DESIGN_ELTS 25
+#define NB_CORES 24
 
 #ifdef PREESM_LOOP_SIZE
 #ifdef PREESM_VERBOSE

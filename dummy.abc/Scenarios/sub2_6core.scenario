@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <flags>
+        <sizesAreInBit/>
+    </flags>
+    <files>
+        <algorithm url="/org.preesm.simsdp/dummy.abc/Algo/ABC/subs/sub2_noOut.pi"/>
+        <architecture url="/org.preesm.simsdp/dummy.abc/Archi/24CoresX86.slam"/>
+        <codegenDirectory url="/org.preesm.simsdp/dummy.abc/Code/generated"/>
+    </files>
+    <constraints excelUrl="">
+        <constraintGroup>
+            <operator name="Core0"/>
+            <task name="sub2_noOut/srcA"/>
+            <task name="sub2_noOut/OB_0"/>
+            <task name="sub2_noOut/OB_1"/>
+            <task name="sub2_noOut/OB_2"/>
+            <task name="sub2_noOut/OB_3"/>
+            <task name="sub2_noOut/OB_4"/>
+            <task name="sub2_noOut/OB_5"/>
+            <task name="sub2_noOut/OB_6"/>
+            <task name="sub2_noOut/OB_7"/>
+            <task name="sub2_noOut/OB_8"/>
+            <task name="sub2_noOut/OB_9"/>
+            <task name="sub2_noOut/srcD"/>
+            <task name="sub2_noOut/get"/>
+            <task name="sub2_noOut/OC"/>
+            <task name="sub2_noOut/src_B0"/>
+            <task name="sub2_noOut/src_B1"/>
+            <task name="sub2_noOut"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core1"/>
+            <task name="sub2_noOut/srcA"/>
+            <task name="sub2_noOut/OB_0"/>
+            <task name="sub2_noOut/OB_1"/>
+            <task name="sub2_noOut/OB_2"/>
+            <task name="sub2_noOut/OB_3"/>
+            <task name="sub2_noOut/OB_4"/>
+            <task name="sub2_noOut/OB_5"/>
+            <task name="sub2_noOut/OB_6"/>
+            <task name="sub2_noOut/OB_7"/>
+            <task name="sub2_noOut/OB_8"/>
+            <task name="sub2_noOut/OB_9"/>
+            <task name="sub2_noOut/srcD"/>
+            <task name="sub2_noOut/get"/>
+            <task name="sub2_noOut/OC"/>
+            <task name="sub2_noOut/src_B0"/>
+            <task name="sub2_noOut/src_B1"/>
+            <task name="sub2_noOut"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core2"/>
+            <task name="sub2_noOut/srcA"/>
+            <task name="sub2_noOut/OB_0"/>
+            <task name="sub2_noOut/OB_1"/>
+            <task name="sub2_noOut/OB_2"/>
+            <task name="sub2_noOut/OB_3"/>
+            <task name="sub2_noOut/OB_4"/>
+            <task name="sub2_noOut/OB_5"/>
+            <task name="sub2_noOut/OB_6"/>
+            <task name="sub2_noOut/OB_7"/>
+            <task name="sub2_noOut/OB_8"/>
+            <task name="sub2_noOut/OB_9"/>
+            <task name="sub2_noOut/srcD"/>
+            <task name="sub2_noOut/get"/>
+            <task name="sub2_noOut/OC"/>
+            <task name="sub2_noOut/src_B0"/>
+            <task name="sub2_noOut/src_B1"/>
+            <task name="sub2_noOut"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core3"/>
+            <task name="sub2_noOut/srcA"/>
+            <task name="sub2_noOut/OB_0"/>
+            <task name="sub2_noOut/OB_1"/>
+            <task name="sub2_noOut/OB_2"/>
+            <task name="sub2_noOut/OB_3"/>
+            <task name="sub2_noOut/OB_4"/>
+            <task name="sub2_noOut/OB_5"/>
+            <task name="sub2_noOut/OB_6"/>
+            <task name="sub2_noOut/OB_7"/>
+            <task name="sub2_noOut/OB_8"/>
+            <task name="sub2_noOut/OB_9"/>
+            <task name="sub2_noOut/srcD"/>
+            <task name="sub2_noOut/get"/>
+            <task name="sub2_noOut/OC"/>
+            <task name="sub2_noOut/src_B0"/>
+            <task name="sub2_noOut/src_B1"/>
+            <task name="sub2_noOut"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core4"/>
+            <task name="sub2_noOut/srcA"/>
+            <task name="sub2_noOut/OB_0"/>
+            <task name="sub2_noOut/OB_1"/>
+            <task name="sub2_noOut/OB_2"/>
+            <task name="sub2_noOut/OB_3"/>
+            <task name="sub2_noOut/OB_4"/>
+            <task name="sub2_noOut/OB_5"/>
+            <task name="sub2_noOut/OB_6"/>
+            <task name="sub2_noOut/OB_7"/>
+            <task name="sub2_noOut/OB_8"/>
+            <task name="sub2_noOut/OB_9"/>
+            <task name="sub2_noOut/srcD"/>
+            <task name="sub2_noOut/get"/>
+            <task name="sub2_noOut/OC"/>
+            <task name="sub2_noOut/src_B0"/>
+            <task name="sub2_noOut/src_B1"/>
+            <task name="sub2_noOut"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core5"/>
+            <task name="sub2_noOut/srcA"/>
+            <task name="sub2_noOut/OB_0"/>
+            <task name="sub2_noOut/OB_1"/>
+            <task name="sub2_noOut/OB_2"/>
+            <task name="sub2_noOut/OB_3"/>
+            <task name="sub2_noOut/OB_4"/>
+            <task name="sub2_noOut/OB_5"/>
+            <task name="sub2_noOut/OB_6"/>
+            <task name="sub2_noOut/OB_7"/>
+            <task name="sub2_noOut/OB_8"/>
+            <task name="sub2_noOut/OB_9"/>
+            <task name="sub2_noOut/srcD"/>
+            <task name="sub2_noOut/get"/>
+            <task name="sub2_noOut/OC"/>
+            <task name="sub2_noOut/src_B0"/>
+            <task name="sub2_noOut/src_B1"/>
+            <task name="sub2_noOut"/>
+        </constraintGroup>
+    </constraints>
+    <timings excelUrl="">
+        <memcpyspeed opname="x86" setuptime="1" timeperunit="0.001"/>
+    </timings>
+    <simuParams>
+        <mainCore>Core0</mainCore>
+        <mainComNode>shared_mem</mainComNode>
+        <averageDataSize>1000</averageDataSize>
+        <dataTypes>
+            <dataType name="uchar" size="8"/>
+        </dataTypes>
+        <specialVertexOperators>
+            <specialVertexOperator path="Core0"/>
+            <specialVertexOperator path="Core1"/>
+            <specialVertexOperator path="Core2"/>
+            <specialVertexOperator path="Core3"/>
+            <specialVertexOperator path="Core4"/>
+            <specialVertexOperator path="Core5"/>
+        </specialVertexOperators>
+    </simuParams>
+    <parameterValues/>
+    <papifyConfigs xmlUrl=""/>
+    <energyConfigs xmlUrl="">
+        <performanceObjective objectiveEPS="0.0"/>
+        <peActorsEnergy/>
+    </energyConfigs>
+</scenario>

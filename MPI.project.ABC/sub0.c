@@ -24,7 +24,7 @@ void* computationThread_Core3(uchar *outA0, uchar *outB0, uchar *outD0);
 #include <stdlib.h>
 
 #ifndef _WIN32
-void handler(int sig) {
+void handler_0(int sig) {
     void *array[30];
     size_t size;
     size = backtrace(array, 30);
@@ -33,12 +33,12 @@ void handler(int sig) {
     exit(1);
 }
 #endif
-pthread_barrier_t iter_barrier;
+pthread_barrier_t iter_barrier_0;
 
 #ifdef PREESM_MD5_UPDATE
 struct rk_sema preesmPrintSema;
 #endif
-unsigned int launch(unsigned int core_id, pthread_t *thread, void* (*start_routine)(void*)) {
+unsigned int launch_0(unsigned int core_id, pthread_t *thread, void* (*start_routine)(void*)) {
 
     // init pthread attributes
     pthread_attr_t attr;
@@ -80,8 +80,8 @@ unsigned int launch(unsigned int core_id, pthread_t *thread, void* (*start_routi
 }
 void sub0(uchar *outA0, uchar *outB0, uchar *outD0){
 #ifndef _WIN32
-    signal(SIGSEGV, handler);
-    signal(SIGPIPE, handler);
+    signal(SIGSEGV, handler_0);
+    signal(SIGPIPE, handler_0);
 #endif
     // Set affinity of main thread to proper core ID
 #ifndef PREESM_NO_AFFINITY
@@ -106,7 +106,7 @@ void sub0(uchar *outA0, uchar *outB0, uchar *outD0){
 #endif
     // Creating a synchronization barrier
 
-    pthread_barrier_init(&iter_barrier, NULL, _PREESM_NBTHREADS_);
+    pthread_barrier_init(&iter_barrier_0, NULL, _PREESM_NBTHREADS_);
 #ifdef PREESM_MD5_UPDATE
     rk_sema_init(&preesmPrintSema, 1);
 #endif
@@ -115,7 +115,7 @@ void sub0(uchar *outA0, uchar *outB0, uchar *outD0){
     // Creating threads
     for (int i = 0; i < _PREESM_NBTHREADS_; i++) {
         if (i != _PREESM_MAIN_THREAD_) {
-            if (launch(i, &coreThreads[i], coreThreadComputations[i])) {
+            if (launch_0(i, &coreThreads[i], coreThreadComputations[i])) {
                 printf("Error: could not launch thread %d\n", i);
                 break;
             }

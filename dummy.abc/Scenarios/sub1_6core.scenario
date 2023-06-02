@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <flags>
+        <sizesAreInBit/>
+    </flags>
+    <files>
+        <algorithm url="/org.preesm.simsdp/dummy.abc/Algo/ABC/subs/sub1_noOut.pi"/>
+        <architecture url="/org.preesm.simsdp/dummy.abc/Archi/24CoresX86.slam"/>
+        <codegenDirectory url="/org.preesm.simsdp/dummy.abc/Code/generated"/>
+    </files>
+    <constraints excelUrl="">
+        <constraintGroup>
+            <operator name="Core0"/>
+            <task name="sub1/B_17"/>
+            <task name="sub1/B_18"/>
+            <task name="sub1/B_19"/>
+            <task name="sub1/B_20"/>
+            <task name="sub1/B_21"/>
+            <task name="sub1/B_22"/>
+            <task name="sub1/B_23"/>
+            <task name="sub1/B_24"/>
+            <task name="sub1/B_25"/>
+            <task name="sub1/B_26"/>
+            <task name="sub1/B_27"/>
+            <task name="sub1/B_28"/>
+            <task name="sub1/B_29"/>
+            <task name="sub1/B_30"/>
+            <task name="sub1/B_31"/>
+            <task name="sub1/B_32"/>
+            <task name="sub1/B_33"/>
+            <task name="sub1/B_34"/>
+            <task name="sub1/B_35"/>
+            <task name="sub1/B_36"/>
+            <task name="sub1/B_37"/>
+            <task name="sub1/B_38"/>
+            <task name="sub1/B_39"/>
+            <task name="sub1/srcA"/>
+            <task name="sub1/srcD"/>
+            <task name="sub1/snkA"/>
+            <task name="sub1/snkB"/>
+            <task name="sub1/snkD"/>
+            <task name="sub1"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core1"/>
+            <task name="sub1/B_17"/>
+            <task name="sub1/B_18"/>
+            <task name="sub1/B_19"/>
+            <task name="sub1/B_20"/>
+            <task name="sub1/B_21"/>
+            <task name="sub1/B_22"/>
+            <task name="sub1/B_23"/>
+            <task name="sub1/B_24"/>
+            <task name="sub1/B_25"/>
+            <task name="sub1/B_26"/>
+            <task name="sub1/B_27"/>
+            <task name="sub1/B_28"/>
+            <task name="sub1/B_29"/>
+            <task name="sub1/B_30"/>
+            <task name="sub1/B_31"/>
+            <task name="sub1/B_32"/>
+            <task name="sub1/B_33"/>
+            <task name="sub1/B_34"/>
+            <task name="sub1/B_35"/>
+            <task name="sub1/B_36"/>
+            <task name="sub1/B_37"/>
+            <task name="sub1/B_38"/>
+            <task name="sub1/B_39"/>
+            <task name="sub1/srcA"/>
+            <task name="sub1/srcD"/>
+            <task name="sub1/snkA"/>
+            <task name="sub1/snkB"/>
+            <task name="sub1/snkD"/>
+            <task name="sub1"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core2"/>
+            <task name="sub1/B_17"/>
+            <task name="sub1/B_18"/>
+            <task name="sub1/B_19"/>
+            <task name="sub1/B_20"/>
+            <task name="sub1/B_21"/>
+            <task name="sub1/B_22"/>
+            <task name="sub1/B_23"/>
+            <task name="sub1/B_24"/>
+            <task name="sub1/B_25"/>
+            <task name="sub1/B_26"/>
+            <task name="sub1/B_27"/>
+            <task name="sub1/B_28"/>
+            <task name="sub1/B_29"/>
+            <task name="sub1/B_30"/>
+            <task name="sub1/B_31"/>
+            <task name="sub1/B_32"/>
+            <task name="sub1/B_33"/>
+            <task name="sub1/B_34"/>
+            <task name="sub1/B_35"/>
+            <task name="sub1/B_36"/>
+            <task name="sub1/B_37"/>
+            <task name="sub1/B_38"/>
+            <task name="sub1/B_39"/>
+            <task name="sub1/srcA"/>
+            <task name="sub1/srcD"/>
+            <task name="sub1/snkA"/>
+            <task name="sub1/snkB"/>
+            <task name="sub1/snkD"/>
+            <task name="sub1"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core3"/>
+            <task name="sub1/B_17"/>
+            <task name="sub1/B_18"/>
+            <task name="sub1/B_19"/>
+            <task name="sub1/B_20"/>
+            <task name="sub1/B_21"/>
+            <task name="sub1/B_22"/>
+            <task name="sub1/B_23"/>
+            <task name="sub1/B_24"/>
+            <task name="sub1/B_25"/>
+            <task name="sub1/B_26"/>
+            <task name="sub1/B_27"/>
+            <task name="sub1/B_28"/>
+            <task name="sub1/B_29"/>
+            <task name="sub1/B_30"/>
+            <task name="sub1/B_31"/>
+            <task name="sub1/B_32"/>
+            <task name="sub1/B_33"/>
+            <task name="sub1/B_34"/>
+            <task name="sub1/B_35"/>
+            <task name="sub1/B_36"/>
+            <task name="sub1/B_37"/>
+            <task name="sub1/B_38"/>
+            <task name="sub1/B_39"/>
+            <task name="sub1/srcA"/>
+            <task name="sub1/srcD"/>
+            <task name="sub1/snkA"/>
+            <task name="sub1/snkB"/>
+            <task name="sub1/snkD"/>
+            <task name="sub1"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core4"/>
+            <task name="sub1/B_17"/>
+            <task name="sub1/B_18"/>
+            <task name="sub1/B_19"/>
+            <task name="sub1/B_20"/>
+            <task name="sub1/B_21"/>
+            <task name="sub1/B_22"/>
+            <task name="sub1/B_23"/>
+            <task name="sub1/B_24"/>
+            <task name="sub1/B_25"/>
+            <task name="sub1/B_26"/>
+            <task name="sub1/B_27"/>
+            <task name="sub1/B_28"/>
+            <task name="sub1/B_29"/>
+            <task name="sub1/B_30"/>
+            <task name="sub1/B_31"/>
+            <task name="sub1/B_32"/>
+            <task name="sub1/B_33"/>
+            <task name="sub1/B_34"/>
+            <task name="sub1/B_35"/>
+            <task name="sub1/B_36"/>
+            <task name="sub1/B_37"/>
+            <task name="sub1/B_38"/>
+            <task name="sub1/B_39"/>
+            <task name="sub1/srcA"/>
+            <task name="sub1/srcD"/>
+            <task name="sub1/snkA"/>
+            <task name="sub1/snkB"/>
+            <task name="sub1/snkD"/>
+            <task name="sub1"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core5"/>
+            <task name="sub1/B_17"/>
+            <task name="sub1/B_18"/>
+            <task name="sub1/B_19"/>
+            <task name="sub1/B_20"/>
+            <task name="sub1/B_21"/>
+            <task name="sub1/B_22"/>
+            <task name="sub1/B_23"/>
+            <task name="sub1/B_24"/>
+            <task name="sub1/B_25"/>
+            <task name="sub1/B_26"/>
+            <task name="sub1/B_27"/>
+            <task name="sub1/B_28"/>
+            <task name="sub1/B_29"/>
+            <task name="sub1/B_30"/>
+            <task name="sub1/B_31"/>
+            <task name="sub1/B_32"/>
+            <task name="sub1/B_33"/>
+            <task name="sub1/B_34"/>
+            <task name="sub1/B_35"/>
+            <task name="sub1/B_36"/>
+            <task name="sub1/B_37"/>
+            <task name="sub1/B_38"/>
+            <task name="sub1/B_39"/>
+            <task name="sub1/srcA"/>
+            <task name="sub1/srcD"/>
+            <task name="sub1/snkA"/>
+            <task name="sub1/snkB"/>
+            <task name="sub1/snkD"/>
+            <task name="sub1"/>
+        </constraintGroup>
+        <constraintGroup>
+            <operator name="Core6"/>
+        </constraintGroup>
+    </constraints>
+    <timings excelUrl="">
+        <memcpyspeed opname="x86" setuptime="1" timeperunit="0.001"/>
+    </timings>
+    <simuParams>
+        <mainCore>Core0</mainCore>
+        <mainComNode>shared_mem</mainComNode>
+        <averageDataSize>1000</averageDataSize>
+        <dataTypes>
+            <dataType name="uchar" size="8"/>
+        </dataTypes>
+        <specialVertexOperators>
+            <specialVertexOperator path="Core0"/>
+            <specialVertexOperator path="Core1"/>
+            <specialVertexOperator path="Core2"/>
+            <specialVertexOperator path="Core3"/>
+            <specialVertexOperator path="Core4"/>
+            <specialVertexOperator path="Core5"/>
+        </specialVertexOperators>
+    </simuParams>
+    <parameterValues/>
+    <papifyConfigs xmlUrl=""/>
+    <energyConfigs xmlUrl="">
+        <performanceObjective objectiveEPS="0.0"/>
+        <peActorsEnergy/>
+    </energyConfigs>
+</scenario>
